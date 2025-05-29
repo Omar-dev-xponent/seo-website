@@ -1,6 +1,7 @@
 import React from "react";
-import FeatureCard from "./feature-card";
+import FeatureCard from "../../../components/feature-card";
 import DiamondCircleSVG from "@/app/(site)/_components/svg-defs/DiamondCircleSVG";
+import OverviewCard from "@/components/overview-card";
 
 const features = [
   {
@@ -39,37 +40,78 @@ const features = [
     ],
     image: "/home/feature03.png",
   },
+  {
+    title: "Private site list management",
+    subtitle:
+      "Build and maintain your private database of high-quality link opportunities.",
+    bulletList: [
+      "Keep your high-value link opportunities private",
+      "Organize sites by quality, niche, and relationship status",
+      "Track outreach history and success rates by site",
+      "Custom site tagging and categorization",
+    ],
+    image: "/home/feature04.png",
+  },
+  {
+    title: "Powerful integrations",
+    subtitle:
+      "Connect seamlessly with your favorite tools to streamline your workflow and maximize efficiency",
+    bulletList: [
+      "Instant contact discovery with popular tools like Snov.ai and Contact.ai",
+      "Automated email verification through trusted providers",
+      "Send outreach emails via GSuite, Outlook, or custom SMTP",
+      "mport and export data between your favorite tools",
+    ],
+    image: "/home/feature05.png",
+  },
 ];
 const FeaturesSection = () => {
   return (
     <section className="relative w-full overflow-hidden bg-white">
       <div className="app-container">
-        <h2 className="text-2xl leading-[1.4] sm:text-3xl sm:leading-10 md:text-5xl font-semibold text-center text-typography-100 md:leading-[62px]">
+        <h2 className="text-2xl leading-[1.4] sm:text-3xl sm:leading-10 md:text-5xl font-semibold text-center text-typography-100 md:leading-[62px] font-display">
           Get all the tools you need for{" "}
-          <span className="text-brand-100">seamless link building</span>{" "}
+          <span className="text-brand-100">
+            seamless <br /> link building
+          </span>{" "}
           management
         </h2>
 
-        <p className="mt-4 text-sm text-center sm:text-lg md:text-xl md:mt-8 text-typography-75">
+        <p className="mt-4 text-sm text-center sm:text-lg font-display md:text-xl md:mt-8 text-typography-75">
           Simplify and control your workflow to manage campaigns,{" "}
           <br className="hidden sm:block" /> teams, and clients in one unified
           platform
         </p>
         {/* feature cards--> */}
-        {/* <div className="my-8 space-y-6 sm:my-24 md:my-12 sm:space-y-10"> */}
         <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
-          {features.map((feature, index) => (
+          {features.slice(0, 3).map((feature, index) => (
             <FeatureCard key={index} feature={feature} />
           ))}
         </div>
+        <OverviewCard
+          title="Client management"
+          description={`Manage multiple clients and campaigns with ease \n using our intuitive dashboard.`}
+          image="/home/client-list.png"
+          bgImage="/overview-accent-bg.png"
+        />
+        <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
+          {features.slice(3, 5).map((feature, index) => (
+            <FeatureCard
+              key={index}
+              feature={feature}
+              className={index === 1 ? "md:flex-row-reverse" : ""}
+            />
+          ))}
+        </div>
       </div>
+
       <div className="absolute right-0 pointer-events-none scale-x-[-1] sm:scale-x-[1] top-40 sm:-left-10">
         <DiamondCircleSVG className="w-full h-full xl:max-w-[577px] xl:h-[741px]" />
       </div>
-      <div className="absolute pointer-events-none bottom-60 scale-x-[-1] sm:scale-x-[1] sm:-bottom-72 right-0 sm:-left-10">
+      <div className="absolute pointer-events-none top-[800px] scale-x-[-1] sm:scale-x-[1] sm:top-[1200px] right-0 sm:-left-10">
         <DiamondCircleSVG className="w-full h-full xl:max-w-[577px] xl:h-[741px]" />
       </div>
-      <div className="absolute bottom-[800px] sm:bottom-60 right-0 scale-x-[-1] pointer-events-none">
+      <div className="absolute top-[1400px] sm:top-[650px] right-0 scale-x-[-1] pointer-events-none">
         <DiamondCircleSVG className="w-full h-full xl:max-w-[577px] xl:h-[741px]" />
       </div>
     </section>
