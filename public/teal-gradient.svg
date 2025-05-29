@@ -1,0 +1,16 @@
+<svg width="577" height="741" viewBox="0 0 577 741" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_5435_8794)">
+<g clip-path="url(#paint0_diamond_5435_8794_clip_path)" data-figma-skip-parse="true"><g transform="matrix(3.82203e-09 0.13 -0.13 3.82203e-09 181 345)"><rect x="0" y="0" width="1002.57" height="1002.57" fill="url(#paint0_diamond_5435_8794)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="1002.57" height="1002.57" transform="scale(1 -1)" fill="url(#paint0_diamond_5435_8794)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="1002.57" height="1002.57" transform="scale(-1 1)" fill="url(#paint0_diamond_5435_8794)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="1002.57" height="1002.57" transform="scale(-1)" fill="url(#paint0_diamond_5435_8794)" opacity="1" shape-rendering="crispEdges"/></g></g><circle cx="181" cy="345" r="130" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_DIAMOND&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.73224854469299316,&#34;g&#34;:0.95192307233810425,&#34;b&#34;:0.91531056165695190,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.73204052448272705,&#34;g&#34;:0.99519228935241699,&#34;b&#34;:0.98472642898559570,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.73224854469299316,&#34;g&#34;:0.95192307233810425,&#34;b&#34;:0.91531056165695190,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.73204052448272705,&#34;g&#34;:0.99519228935241699,&#34;b&#34;:0.98472642898559570,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;transform&#34;:{&#34;m00&#34;:7.6440528573584743e-06,&#34;m01&#34;:-260.00003051757812,&#34;m02&#34;:311.0,&#34;m10&#34;:260.00003051757812,&#34;m11&#34;:7.6440528573584743e-06,&#34;m12&#34;:214.99998474121094},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
+</g>
+<defs>
+<filter id="filter0_f_5435_8794" x="-214.109" y="-50.109" width="790.218" height="790.218" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="132.554" result="effect1_foregroundBlur_5435_8794"/>
+</filter>
+<clipPath id="paint0_diamond_5435_8794_clip_path"><circle cx="181" cy="345" r="130"/></clipPath><linearGradient id="paint0_diamond_5435_8794" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BBF3E9"/>
+<stop offset="1" stop-color="#BBFEFB"/>
+</linearGradient>
+</defs>
+</svg>

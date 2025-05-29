@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 174 89% 38%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+
+    --radius: 0.5rem;
+
+    /* --- Custom Style Color Starts----- */
+    /* -- BG COLOR -- */
+    --bg-color: 180, 33%, 98%;
+    --hover-color: 179, 89%, 26%;
+    --footer-color: 177, 91%, 9%;
+    /* --- Brand color--- */
+    --brand-100: 178, 93%, 37%;
+    --brand-75: 178, 55%, 53%;
+    --brand-50: 178, 54%, 68%;
+    --brand-25: 177, 55%, 84%;
+    --brand-10: 180, 55%, 94%;
+    --brand-5: 180, 53%, 97%;
+    /* ---typography color--- */
+    --typography-100: 177, 90%, 4%;
+    --typography-75: 175, 9%, 28%;
+    --typography-50: 180, 4%, 52%;
+    --typography-25: 168, 4%, 76%;
+    --typography-10: 180, 4%, 91%;
+    --typography-5: 180, 4%, 95%;
+    /* ---accent color--- */
+    --accent-1: 180, 30%, 96%;
+    --accent-2: 38, 57%, 92%;
+    --accent-3: 269, 55%, 92%;
+    --accent-4: 217, 16%, 94%;
+    /* ---Custom Style color ends--- */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.app-container {
+  @apply w-full px-5 mx-auto md:px-6 2xl:px-0 max-w-7xl;
+}
+/* table of content */
+div#ez-toc-container {
+  margin-bottom: 1.6em;
+}
+#ez-toc-container span.ez-toc-title-toggle {
+  display: none;
+}
+p.ez-toc-title {
+  font-weight: bold;
+  color: #0f172a;
+  font-size: 1.0625em;
+}
+ul.ez-toc-list,
+ol.ez-toc-list {
+  padding-bottom: 0 !important;
+  border-bottom: none;
+}
+ul.ez-toc-list ul,
+ol.ez-toc-list ol {
+  list-style: none;
+}
+ul.ez-toc-list li a,
+ol.ez-toc-list li a {
+  color: #0f172a;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* blog round up  */
+.infobox {
+  display: flex;
+  align-items: center;
+  background: #f9f3e1;
+  padding: 0 2rem;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.5); */
+  border-bottom: 1px solid #ffe8a5;
+}
+.infobox img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.infobox h2,
+.infobox p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .infobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f3e1;
+    padding: 1rem 2rem 0;
+    text-align: center;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.5); */
+    border-bottom: 1px solid #ffe8a5;
+  }
+  .infobox figure {
+    margin-top: 0.5rem !important;
+  }
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  background: #f9f3e1;
+  padding: 0 2rem;
+  border-radius: 10px;
+  border-bottom: 1px solid #ffe8a5;
+}
