@@ -21,7 +21,7 @@ const OverviewCard = ({
       <h4 className="mb-3 text-xl font-semibold text-center sm:mb-4 sm:text-4xl text-typography-100 font-display">
         {title}
       </h4>
-      <p className="text-sm text-center whitespace-pre-line sm:text-base font-display text-typography-75">
+      <p className="text-sm text-center sm:whitespace-pre-line sm:text-base font-display text-typography-75">
         {description}
       </p>
       <div className="flex items-center justify-center mt-5 sm:mt-12">

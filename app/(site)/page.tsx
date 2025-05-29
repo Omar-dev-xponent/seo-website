@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "@/app/(site)/_components/hero";
 import FeaturesSection from "@/app/(site)/_components/feature";
+import ReviewSection from "@/app/(site)/_components/review";
 import { ComparisonSection } from "./_components/comparison";
 import { CalculatorSection } from "./_components/calculator";
 import TestimonialsSection from "./_components/testimonials";
@@ -20,6 +21,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <FeaturesSection />
+      <ReviewSection />
       {/* <ComparisonSection /> */}
       {/* <CalculatorSection /> */}
       {/* <TestimonialsSection /> */}
