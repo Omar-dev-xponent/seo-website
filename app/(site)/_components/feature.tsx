@@ -1,5 +1,5 @@
 import React from "react";
-import FeatureCard from "../../../components/feature-card";
+import FeatureCard from "@/components/feature-card";
 import DiamondCircleSVG from "@/app/(site)/_components/svg-defs/DiamondCircleSVG";
 import OverviewCard from "@/components/overview-card";
 
@@ -76,7 +76,6 @@ const FeaturesSection = () => {
           </span>{" "}
           management
         </h2>
-
         <p className="mt-4 text-sm text-center sm:text-lg font-display md:text-xl md:mt-8 text-typography-75">
           Simplify and control your workflow to manage campaigns,{" "}
           <br className="hidden sm:block" /> teams, and clients in one unified

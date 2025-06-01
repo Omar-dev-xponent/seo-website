@@ -2,9 +2,9 @@ import React from "react";
 import HeroSection from "@/app/(site)/_components/hero";
 import FeaturesSection from "@/app/(site)/_components/feature";
 import ReviewSection from "@/app/(site)/_components/review";
-import BrandSection from "@/app/(site)/_components/brand";
+import BrandSection from "@/components/brand";
 import ValuePropositionSection from "@/app/(site)/_components/value-proposition";
-import LimitedOfferCtaSection from "@/app/(site)/_components/limited-offer-cta";
+import TrialCTA from "@/components/trial-cta";
 import { ComparisonSection } from "./_componentsPrev/comparison";
 import { CalculatorSection } from "./_componentsPrev/calculator";
 import TestimonialsSection from "./_componentsPrev/testimonials";
@@ -27,7 +27,10 @@ export default function HomePage() {
       <ReviewSection />
       <BrandSection />
       <ValuePropositionSection />
-      <LimitedOfferCtaSection />
+      <TrialCTA
+        title={`Lock in 30% off for 3 months. \n Limited time only!`}
+        description={`Start risk-free with free migration assistance and a 30-day \n money-back guarantee`}
+      />
       {/* <ComparisonSection /> */}
       {/* <CalculatorSection /> */}
       {/* <TestimonialsSection /> */}

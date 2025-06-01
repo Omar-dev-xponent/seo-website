@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 interface Feature {
   title: string;
   subtitle: string;
-  bulletList: string[];
+  bulletList?: string[];
   image: string;
 }
 interface FeatureCardProps {
@@ -29,9 +29,9 @@ const FeatureCard = ({ feature, className }: FeatureCardProps) => {
         <p className="mt-3 text-sm font-display sm:text-lg text-typography-75 sm:mt-7">
           {feature.subtitle}
         </p>
-        {feature.bulletList.length > 0 && (
+        {feature.bulletList && feature.bulletList.length > 0 && (
           <ul className="mt-6 space-y-3 sm:mt-10">
-            {feature.bulletList.map((item) => (
+            {feature?.bulletList?.map((item) => (
               <li className="flex space-x-2">
                 <span className="flex items-center justify-center flex-shrink-0 w-5 h-5 mt-1 rounded-full font-display bg-brand-100">
                   <FiCheck className="text-white" />
