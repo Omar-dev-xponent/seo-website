@@ -1,7 +1,7 @@
 type DiamondCircleSVGProps = {
   width?: number | string;
   height?: number | string;
-  className?: string; // optional for Tailwind or utility class support
+  className?: string;
 };
 
 const DiamondCircleSVG = ({

@@ -67,12 +67,12 @@ const features = [
 ];
 const FeaturesSection = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-white">
+    <section className="relative w-full bg-white">
       <div className="app-container">
         <h2 className="text-2xl leading-[1.4] sm:text-3xl sm:leading-10 md:text-5xl font-semibold text-center text-typography-100 md:leading-[62px] font-display">
           Get all the tools you need for{" "}
           <span className="text-brand-100">
-            seamless <br /> link building
+            seamless <br className="hidden lg:block" /> link building
           </span>{" "}
           management
         </h2>
@@ -112,6 +112,12 @@ const FeaturesSection = () => {
         <DiamondCircleSVG className="w-full h-full xl:max-w-[577px] xl:h-[741px]" />
       </div>
       <div className="absolute top-[1400px] sm:top-[650px] right-0 scale-x-[-1] pointer-events-none">
+        <DiamondCircleSVG className="w-full h-full xl:max-w-[577px] xl:h-[741px]" />
+      </div>
+      <div className="absolute right-0 pointer-events-none scale-x-[-1] sm:scale-x-[1] top-[2000px] sm:-left-10">
+        <DiamondCircleSVG className="w-full h-full xl:max-w-[577px] xl:h-[741px]" />
+      </div>
+      <div className="absolute top-[400px] sm:top-[2600px] right-0 scale-x-[-1] pointer-events-none">
         <DiamondCircleSVG className="w-full h-full xl:max-w-[577px] xl:h-[741px]" />
       </div>
     </section>

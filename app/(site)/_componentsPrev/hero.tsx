@@ -3,7 +3,7 @@ import config from "@/config";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import VideoSection from "../_components/video";
+import VideoSection from "./video";
 
 export default function HeroSection() {
   return (

@@ -4,12 +4,13 @@ import FeaturesSection from "@/app/(site)/_components/feature";
 import ReviewSection from "@/app/(site)/_components/review";
 import BrandSection from "@/app/(site)/_components/brand";
 import ValuePropositionSection from "@/app/(site)/_components/value-proposition";
-import { ComparisonSection } from "./_components/comparison";
-import { CalculatorSection } from "./_components/calculator";
-import TestimonialsSection from "./_components/testimonials";
-import PricingSection from "./_components/pricing";
-import ContactCtaSection from "./_components/contact-cta";
-import FaqSection from "./_components/faq";
+import LimitedOfferCtaSection from "@/app/(site)/_components/limited-offer-cta";
+import { ComparisonSection } from "./_componentsPrev/comparison";
+import { CalculatorSection } from "./_componentsPrev/calculator";
+import TestimonialsSection from "./_componentsPrev/testimonials";
+import PricingSection from "./_componentsPrev/pricing";
+import ContactCtaSection from "./_componentsPrev/contact-cta";
+import FaqSection from "./_componentsPrev/faq";
 
 export const metadata = {
   title:
@@ -26,6 +27,7 @@ export default function HomePage() {
       <ReviewSection />
       <BrandSection />
       <ValuePropositionSection />
+      <LimitedOfferCtaSection />
       {/* <ComparisonSection /> */}
       {/* <CalculatorSection /> */}
       {/* <TestimonialsSection /> */}

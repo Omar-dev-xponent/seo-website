@@ -30,7 +30,7 @@ const HeroSection = () => {
         <span className="mt-3 text-base font-display sm:mt-4 text-typography-50">
           No credit card required
         </span>
-        <div className="max-w-5xl max-h-[600px] mt-6 sm:mt-8 md:mt-12 border-[1px] border-brand-100 rounded-xl overflow-hidden">
+        <div className="max-w-5xl relative max-h-[600px] mt-6 sm:mt-8 md:mt-12 border-[1px] border-brand-100 rounded-xl overflow-hidden">
           <Image
             src={"/home/hero.png"}
             alt="hero"
@@ -39,6 +39,20 @@ const HeroSection = () => {
             sizes="100vw"
             className="w-full h-auto"
           />
+          <div>
+            <button className="absolute flex items-center justify-center w-10 h-10 p-0 transition-all duration-300 -translate-x-1/2 -translate-y-1/2 rounded-full cursor-pointer md:p-5 md:w-16 md:h-16 hover:bg-background-hover bg-brand-100 top-1/2 left-1/2 ">
+              <div className="w-4 h-4 md:w-6 md:h-6">
+                <Image
+                  src={"/icons/play.svg"}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-auto"
+                  alt="play button"
+                />
+              </div>
+            </button>
+          </div>
         </div>
       </div>
       <div className="absolute pointer-events-none top-10 -left-10 lg:-top-20 lg:-left-16">

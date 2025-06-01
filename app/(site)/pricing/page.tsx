@@ -1,5 +1,5 @@
-import { ComparisonSection } from "../_components/comparison";
-import PricingSection from "../_components/pricing";
+import { ComparisonSection } from "../_componentsPrev/comparison";
+import PricingSection from "../_componentsPrev/pricing";
 import PricingFaq from "./_components/faq";
 import PricingHero from "./_components/hero";
 import PricingTestimonials from "./_components/testimonials";

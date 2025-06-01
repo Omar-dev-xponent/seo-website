@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 
 export function ComparisonSection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+    <section className="w-full py-12 bg-white md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2 max-w-[900px] mx-auto">
@@ -19,13 +19,13 @@ export function ComparisonSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 md:grid-cols-2">
+        <div className="grid items-start max-w-5xl gap-6 py-12 mx-auto md:grid-cols-2">
           <Card>
             <CardHeader className="space-y-1">
               <div className="flex items-center gap-3">
                 <Badge
                   variant="secondary"
-                  className="h-10 w-10 rounded-full p-0 flex items-center justify-center text-base font-bold"
+                  className="flex items-center justify-center w-10 h-10 p-0 text-base font-bold rounded-full"
                 >
                   1
                 </Badge>
@@ -85,7 +85,7 @@ export function ComparisonSection() {
                     </span>
                   </div>
                 </li>
-                <li className="flex items-center gap-3 mt-6 pt-6 border-t">
+                <li className="flex items-center gap-3 pt-6 mt-6 border-t">
                   <span className="text-xl">⏱️</span>
                   <span className="font-bold">
                     Total time spent per campaign: 4+ hours
@@ -99,7 +99,7 @@ export function ComparisonSection() {
               <div className="flex items-center gap-3">
                 <Badge
                   variant="default"
-                  className="h-10 w-10 rounded-full p-0 flex items-center justify-center text-base font-bold"
+                  className="flex items-center justify-center w-10 h-10 p-0 text-base font-bold rounded-full"
                 >
                   2
                 </Badge>
@@ -159,7 +159,7 @@ export function ComparisonSection() {
                     </span>
                   </div>
                 </li>
-                <li className="flex items-center gap-3 mt-6 pt-6 border-t">
+                <li className="flex items-center gap-3 pt-6 mt-6 border-t">
                   <span className="text-xl">🚀</span>
                   <span className="font-bold">
                     Total time per campaign: 30 minutes

@@ -21,7 +21,7 @@ const FeatureCard = ({ feature, className }: FeatureCardProps) => {
       )}
     >
       <div
-        className={`md:w-1/2 ${className?.includes("md:flex-row-reverse") ? "" : "lg:pr-36"}`}
+        className={`md:w-1/2 ${className?.includes("md:flex-row-reverse") ? "" : "md:pr-10 lg:pr-36"}`}
       >
         <h4 className="text-lg font-semibold font-display sm:text-4xl text-typography-100">
           {feature.title}
@@ -45,7 +45,7 @@ const FeatureCard = ({ feature, className }: FeatureCardProps) => {
         )}
       </div>
       <div
-        className={`p-6 md:w-1/2 max-h-[400px] max-w-[514px] bg-accent-1 sm:p-9 rounded-xl ${className?.includes("md:flex-row-reverse") ? "lg:mr-36" : ""}`}
+        className={`p-6 md:w-1/2 max-h-[400px] max-w-[514px] bg-accent-1 sm:p-9 rounded-xl ${className?.includes("md:flex-row-reverse") ? "md:mr-10 lg:mr-36" : ""}`}
       >
         <Image
           src={feature.image}

@@ -43,6 +43,13 @@ const ReviewSection = () => {
           height={250}
           className="absolute top-0 z-10 hidden pointer-events-none right-40 lg:block"
         />
+        <Image
+          src={"/icons/right-qoute.svg"}
+          alt="qoute"
+          width={44}
+          height={34}
+          className="absolute top-0 z-10 block pointer-events-none left-5 lg:hidden"
+        />
       </div>
     </section>
   );
