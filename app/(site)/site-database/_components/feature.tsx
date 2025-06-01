@@ -37,7 +37,7 @@ const SiteDbFeature = () => {
   ];
   return (
     <section className="app-container">
-      <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
+      <div className="pb-8 space-y-6 md:pb-24 sm:pb-12 sm:space-y-10">
         {features.slice(0, 2).map((feature, index) => (
           <FeatureCard
             key={index}
