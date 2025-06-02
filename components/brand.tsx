@@ -15,7 +15,7 @@ const BrandSection = () => {
       <h6 className="text-xl font-semibold text-center sm:text-2xl font-display text-typography-50">
         Trusted by leading companies
       </h6>
-      <div className="flex flex-wrap items-center justify-center mt-5 gap-y-4 gap-x-6 sm:gap-x-12 sm:mt-10">
+      <div className="flex flex-wrap items-center justify-center mt-5 gap-y-5 gap-x-6 sm:gap-x-12 sm:mt-10">
         {brands.map((brand, ind) => {
           return (
             <div key={ind} className="h-4 max-w-20 sm:max-w-36 sm:h-7">
