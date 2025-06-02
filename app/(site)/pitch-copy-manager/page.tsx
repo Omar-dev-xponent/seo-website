@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "@/app/(site)/pitch-copy-manager/_components/hero";
 import Feature from "@/app/(site)/pitch-copy-manager/_components/feature";
 import BrandSection from "@/components/brand";
-import Testimonials from "@/app/(site)/pitch-copy-manager/_components/Testimonials";
+import Testimonials from "@/app/(site)/pitch-copy-manager/_components/testimonials";
 import TrialCTA from "@/components/trial-cta";
 
 const PitchCopyManager = () => {

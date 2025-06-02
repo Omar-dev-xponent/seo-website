@@ -4,7 +4,7 @@ import { FiCheck } from "react-icons/fi";
 import { twMerge } from "tailwind-merge";
 interface Feature {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   bulletList?: string[];
   image: string;
 }
@@ -21,14 +21,16 @@ const FeatureCard = ({ feature, className }: FeatureCardProps) => {
       )}
     >
       <div
-        className={`md:w-1/2 ${className?.includes("md:flex-row-reverse") ? "md:pl-10 lg:pl-36" : "md:pr-10 lg:pr-36"}`}
+        className={`md:w-1/2 ${className?.includes("md:flex-row-reverse") ? "md:pl-10 lg:pl-28" : "md:pr-10 lg:pr-28"}`}
       >
         <h4 className="text-lg font-semibold font-display sm:text-4xl text-typography-100">
           {feature.title}
         </h4>
-        <p className="mt-3 text-sm font-display sm:text-lg text-typography-75 sm:mt-7">
-          {feature.subtitle}
-        </p>
+        {feature.subtitle && (
+          <p className="mt-3 text-sm font-display sm:text-lg text-typography-75 sm:mt-7">
+            {feature.subtitle}
+          </p>
+        )}
         {feature.bulletList && feature.bulletList.length > 0 && (
           <ul className="mt-6 space-y-3 sm:mt-10">
             {feature?.bulletList?.map((item) => (
