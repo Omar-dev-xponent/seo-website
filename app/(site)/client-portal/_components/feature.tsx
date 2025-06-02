@@ -14,7 +14,7 @@ const ClientPortalFeature = () => {
         "Submit domains for approval before outreach",
         "Track approval status and feedback in real-time",
       ],
-      image: "/site-database/feature01.png",
+      image: "/client-portal/feature01.png",
     },
     {
       title: "Built-in messaging & instant notifications",
@@ -25,7 +25,7 @@ const ClientPortalFeature = () => {
         "Instant notifications on approvals, updates & live links",
         "Optional email alerts or Slack-style integration",
       ],
-      image: "/site-database/feature01.png",
+      image: "/client-portal/feature02.png",
     },
     {
       title: "Built for agencies & freelancers",
@@ -36,7 +36,7 @@ const ClientPortalFeature = () => {
         "AManage multiple orders & timelines easily",
         "Maintain visibility across all client work",
       ],
-      image: "/site-database/feature01.png",
+      image: "/client-portal/feature02.png",
     },
   ];
   return (
