@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureCard from "@/components/feature-card";
-import DiamondCircleSVG from "@/app/(site)/_components/svg-defs/DiamondCircleSVG";
+import DiamondCircleSVG from "@/components/svg-defs/DiamondCircleSVG";
 import OverviewCard from "@/components/overview-card";
 
 const features = [

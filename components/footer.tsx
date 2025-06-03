@@ -1,78 +1,138 @@
-import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-
-export default function Footer() {
+import { FaFacebook } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { RiTwitterXFill } from "react-icons/ri";
+import { TbBrandYoutubeFilled } from "react-icons/tb";
+import DiamondCircleSVG from "@/components/svg-defs/DiamondCircleSVG";
+const Footer = () => {
+  const socialLinks = [
+    { label: "Facebook", icon: FaFacebook, path: "/" },
+    { label: "Instagram", icon: RiInstagramFill, path: "/" },
+    { label: "Twitter", icon: RiTwitterXFill, path: "/" },
+    { label: "Youtube", icon: TbBrandYoutubeFilled, path: "/" },
+  ];
+  const legalLinks = [
+    { label: "Terms .", path: "/" },
+    { label: "Privacy .", path: "/" },
+    { label: "Cookie Policy", path: "/" },
+  ];
+  const productLinks = [
+    { label: "Site Database", path: "/site-databae" },
+    { label: "Client Portal", path: "/client-portal" },
+    { label: "Prospecting", path: "/prospecting" },
+    { label: "Filtering & Shortlisting", path: "/filtering-and-shortlisting" },
+    { label: "Pitch Copy Manager", path: "/pitch-copy-manager" },
+    { label: "Campaigns", path: "/campaign" },
+    { label: "Reporting", path: "/reporting" },
+    { label: "Integrations", path: "/integrations" },
+    { label: "Team Management", path: "/team-management" },
+    { label: "Link Monitoring", path: "/link-monitoring" },
+  ];
+  const resourcesLinks = [
+    { label: "Testimonial", path: "/" },
+    { label: "Pricing", path: "/" },
+    { label: "Blog", path: "/" },
+  ];
   return (
-    <footer className="w-full border-t bg-background">
-      <div className="container flex flex-col items-center justify-between gap-4 py-10 lg:h-24 lg:flex-row lg:py-0">
-        <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-          <Link href="/">
-            <span className="text-[15px] font-semibold text-slate-900">
-              <span className="text-primary-500 font-bold">O</span>utreachful
-            </span>
-          </Link>
-
-          <p className="text-center text-sm text-slate-600 md:text-left">
-            &copy; {new Date().getFullYear()} Outreachful. All rights reserved.
-          </p>
+    <footer className="relative overflow-hidden">
+      <div className="app-container relative flex flex-wrap gap-8 justify-between border-t-[1px] border-typography-25 py-6 sm:pb-7 sm:pt-16">
+        {/* footer div one */}
+        <div className="flex flex-col justify-between gap-9">
+          <div>
+            <h6 className="text-xl font-semibold sm:text-4xl font-display text-brand-100">
+              Outreachful
+            </h6>
+            <p className="mt-2 text-sm sm:text-base sm:mt-4 text-typography-75 font-display">
+              Copyright &copy; Outreachfull 2025. All rights reserved
+            </p>
+          </div>
+          <div>
+            <div className="flex items-center space-x-4">
+              {socialLinks.map((link, ind) => {
+                return (
+                  <Link
+                    href={link.path}
+                    className="inline-block p-2 transition-all duration-300 rounded-full cursor-pointer hover:bg-background-hover bg-brand-100"
+                    key={ind}
+                  >
+                    <link.icon className="text-base text-white" />
+                  </Link>
+                );
+              })}
+            </div>
+            <div className="flex items-center mt-3 space-x-1 sm:mt-4">
+              {legalLinks.map((link, ind) => {
+                return (
+                  <Link
+                    href={link.path}
+                    className="text-sm duration-300 cursor-pointer sm:text-base text-typography-75 font-display hover:text-typography-100 translition-all"
+                    key={ind}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
         </div>
-        <div className="flex gap-4">
-          <Link href="#" className="text-slate-400 hover:text-slate-700">
-            <span className="sr-only">Twitter</span>
-            <Twitter className="h-5 w-5" />
-          </Link>
-          <Link href="#" className="text-slate-400 hover:text-slate-700">
-            <span className="sr-only">GitHub</span>
-            <Github className="h-5 w-5" />
-          </Link>
-          <Link href="#" className="text-slate-400 hover:text-slate-700">
-            <span className="sr-only">LinkedIn</span>
-            <Linkedin className="h-5 w-5" />
-          </Link>
-          <Link href="#" className="text-slate-400 hover:text-slate-700">
-            <span className="sr-only">Facebook</span>
-            <Facebook className="h-5 w-5" />
-          </Link>
+        {/* footer div two */}
+        <div>
+          <h6 className="mb-6 text-xl font-medium sm:mb-7 text-typography-100 font-display">
+            Product
+          </h6>
+          <ul className="space-y-4">
+            {productLinks.map((link, ind) => {
+              return (
+                <li
+                  key={ind}
+                  className="text-sm transition-all duration-300 sm:text-base text-typography-75 font-display hover:text-typography-100"
+                >
+                  <Link href={link.path}>{link.label}</Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-        <nav className="flex gap-4 md:gap-6">
-          <Link
-            href="/pricing"
-            className="text-xs text-slate-600 hover:underline underline-offset-4"
-          >
-            Pricing
-          </Link>
-          <Link
-            href="/about"
-            className="text-xs text-slate-600 hover:underline underline-offset-4"
-          >
-            About
-          </Link>
-          <Link
-            href="/contact"
-            className="text-xs text-slate-600 hover:underline underline-offset-4"
-          >
-            Contact
-          </Link>
-          <Link
-            href="/blog"
-            className="text-xs text-slate-600 hover:underline underline-offset-4"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/terms-conditions"
-            className="text-xs text-slate-600 hover:underline underline-offset-4"
-          >
-            Terms
-          </Link>
-          <Link
-            href="/privacy-policy"
-            className="text-xs text-slate-600 hover:underline underline-offset-4"
-          >
-            Privacy
-          </Link>
-        </nav>
+        {/* footer div three */}
+        <div>
+          <h6 className="mb-6 text-xl font-medium sm:mb-7 text-typography-100 font-display">
+            Resource
+          </h6>
+          <ul className="space-y-4">
+            {resourcesLinks.map((link, ind) => {
+              return (
+                <li
+                  key={ind}
+                  className="text-sm transition-all duration-300 sm:text-base text-typography-75 font-display hover:text-typography-100"
+                >
+                  <Link href={link.path}>{link.label}</Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        {/* footer div four */}
+        <div>
+          <h6 className="mb-6 text-xl font-medium sm:mb-7 text-typography-100 font-display">
+            Payment Method
+          </h6>
+          <Image
+            src={"/payment-method.png"}
+            alt="Payment Methods"
+            width={177}
+            height={58}
+          />
+        </div>
+      </div>
+      <div className="absolute left-0 hidden pointer-events-none sm:block -top-32">
+        <DiamondCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
+      </div>
+      <div className="absolute right-0 -bottom-28 sm:-bottom-56 scale-x-[-1] pointer-events-none">
+        <DiamondCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

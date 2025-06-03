@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-import DiamondCircleSVG from "@/app/(site)/_components/svg-defs/DiamondCircleSVG";
+import DiamondCircleSVG from "@/components/svg-defs/DiamondCircleSVG";
 
 const HeroSection = () => {
   return (
