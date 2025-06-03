@@ -30,9 +30,9 @@ const Footer = () => {
     { label: "Link Monitoring", path: "/link-monitoring" },
   ];
   const resourcesLinks = [
-    { label: "Testimonial", path: "/" },
-    { label: "Pricing", path: "/" },
-    { label: "Blog", path: "/" },
+    { label: "Testimonial", path: "/testimonial" },
+    { label: "Pricing", path: "/pricing" },
+    { label: "Blog", path: "/blog" },
   ];
   return (
     <footer className="relative overflow-hidden">
