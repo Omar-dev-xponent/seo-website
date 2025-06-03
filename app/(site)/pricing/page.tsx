@@ -1,23 +1,12 @@
-import { ComparisonSection } from "../_componentsPrev/comparison";
-import PricingSection from "../_componentsPrev/pricing";
-import PricingFaq from "./_components/faq";
-import PricingHero from "./_components/hero";
-import PricingTestimonials from "./_components/testimonials";
+import React from "react";
+import Hero from "@/app/(site)/pricing/_components/hero";
 
-export const metadata = {
-  title: " Affordable Pricing Plans for SEO Teams of All Sizes - Outreachful",
-  description:
-    "Flexible pricing for powerful link-building. Compare plans to find the perfect fit for your agency, in-house team, or freelance SEO business.",
+const Pricing = () => {
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
-export default function PricingPage() {
-  return (
-    <div>
-      <PricingHero />
-      <PricingSection />
-      <ComparisonSection />
-      <PricingTestimonials />
-      <PricingFaq />
-    </div>
-  );
-}
+export default Pricing;

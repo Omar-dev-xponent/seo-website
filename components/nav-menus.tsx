@@ -141,7 +141,12 @@ export function DesktopNavMenus() {
                             />
                             <div>
                               <p className="mb-1 text-base font-display text-typography-100">
-                                {link.title}
+                                {link.title}{" "}
+                                {link.tag && (
+                                  <span className="p-1 px-2 text-xs rounded-full bg-brand-10 font-display text-brand-100">
+                                    {link.tag}
+                                  </span>
+                                )}
                               </p>
                               <p className="text-sm font-display text-typography-50">
                                 {link.description}
@@ -176,7 +181,12 @@ export function DesktopNavMenus() {
                             />
                             <div>
                               <p className="mb-1 text-base font-display text-typography-100">
-                                {link.title}
+                                {link.title}{" "}
+                                {link.tag && (
+                                  <span className="p-1 px-2 text-xs rounded-full bg-brand-10 font-display text-brand-100">
+                                    {link.tag}
+                                  </span>
+                                )}
                               </p>
                               <p className="text-sm font-display text-typography-50">
                                 {link.description}

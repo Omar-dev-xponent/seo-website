@@ -56,7 +56,6 @@ function MobileMenu() {
     <div className="flex flex-col h-full">
       <div className="flex flex-col py-6 space-y-3">
         <MobileNavMenus />
-
         <Link
           href={`${config.mainAppUrl}/signin`}
           className="text-sm font-semibold "
