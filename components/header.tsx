@@ -8,24 +8,24 @@ import { Menu } from "lucide-react";
 export default function Header() {
   return (
     <div className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex items-center justify-between h-16">
         <div className="flex items-center gap-2">
           <Link href="/">
             <span className="text-xl font-semibold text-slate-900">
-              <span className="text-primary-500 font-bold">O</span>utreachful
+              <span className="font-bold text-primary-500">O</span>utreachful
             </span>
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex gap-6">
+        <div className="hidden gap-6 lg:flex">
           <DesktopNavMenus />
         </div>
 
         <div className="flex items-center gap-4">
           <Link
             href={`${config.mainAppUrl}/signin`}
-            className="text-sm font-semibold hidden sm:block"
+            className="hidden text-sm font-semibold sm:block"
           >
             Sign In
           </Link>
@@ -37,7 +37,7 @@ export default function Header() {
           <Sheet>
             <SheetTrigger asChild className="lg:hidden">
               <Button variant="ghost" size="icon">
-                <Menu className="h-5 w-5" />
+                <Menu className="w-5 h-5" />
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
@@ -54,7 +54,7 @@ export default function Header() {
 function MobileMenu() {
   return (
     <div className="flex flex-col h-full">
-      <div className="flex flex-col space-y-3 py-6">
+      <div className="flex flex-col py-6 space-y-3">
         <MobileNavMenus />
 
         <Link

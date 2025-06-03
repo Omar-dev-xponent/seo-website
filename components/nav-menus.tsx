@@ -17,26 +17,77 @@ import {
 } from "@/components/ui/navigation-menu";
 import config from "@/config";
 import { cn } from "@/lib/utils";
-import { Rocket } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
 
-const products: { title: string; href: string; description: string }[] = [
+const products: {
+  title: string;
+  href: string;
+  description: string;
+  tag?: string;
+  icon: string;
+}[] = [
   {
-    title: "Outreach",
-    href: "#",
-    description: "Automate and scale your outreach campaigns with smart tools.",
+    title: "Site Database",
+    href: "/site-database",
+    description: "Lorem ipsum lorem ipsum lorem",
+    icon: "/icons/nav-icons/database.svg",
   },
   {
-    title: "Lead Database",
-    href: "#",
-    description:
-      "Centralized, high-quality leads for faster sales prospecting.",
+    title: "Client Portal",
+    href: "client-portal",
+    description: "Lorem ipsum lorem ipsum lorem",
+    tag: "New Addition",
+    icon: "/icons/nav-icons/client-portal.svg",
   },
   {
-    title: "Email Accounts",
-    href: "#",
-    description: "Manage multiple email accounts securely in one place.",
+    title: "Prospecting",
+    href: "/prospecting",
+    description: "Lorem ipsum lorem ipsum lorem",
+    icon: "/icons/nav-icons/prospect.svg",
+  },
+  {
+    title: "Filtering & Shortlisting",
+    href: "/filtering-and-shortlisting",
+    description: "Lorem ipsum lorem ipsum lorem",
+    icon: "/icons/nav-icons/filtering.svg",
+  },
+  {
+    title: "Pitch Copy Manager",
+    href: "/pitch-copy-manager",
+    description: "Lorem ipsum lorem ipsum lorem",
+    icon: "/icons/nav-icons/pitch-copy.svg",
+  },
+  {
+    title: "Campaigns",
+    href: "/campaign",
+    description: "Lorem ipsum lorem ipsum lorem",
+    icon: "/icons/nav-icons/campaign.svg",
+  },
+  {
+    title: "Reporting",
+    href: "/reporting",
+    description: "Lorem ipsum lorem ipsum lorem",
+    icon: "/icons/nav-icons/reporting.svg",
+  },
+  {
+    title: "Team Management",
+    href: "/team-management",
+    description: "Lorem ipsum lorem ipsum lorem",
+    icon: "/icons/nav-icons/team.svg",
+  },
+  {
+    title: "Integrations",
+    href: "/integrations",
+    description: "Lorem ipsum lorem ipsum lorem",
+    icon: "/icons/nav-icons/integrations.svg",
+  },
+  {
+    title: "Link Monitoring",
+    href: "/link-monitoring",
+    description: "Lorem ipsum lorem ipsum lorem",
+    icon: "/icons/nav-icons/link.svg",
   },
 ];
 
@@ -70,34 +121,74 @@ export function DesktopNavMenus() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Products</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[450px] lg:w-[550px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <Link
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href={`${config.mainAppUrl}/signin`}
-                  >
-                    <Rocket className="w-14 h-14 text-teal-500" />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Start For Free!
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Get built-in SEO metrics, instant contact discovery,
-                      simplified outreach, and real-time backlink monitoring in
-                      one platform.
-                    </p>
-                  </Link>
-                </NavigationMenuLink>
-              </li>
-              {products.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
+            <ul className="flex space-x-3 p-3 md:w-[450px] lg:w-[618px] ">
+              <div className="flex-1">
+                {products.slice(0, 5).map((link, ind) => {
+                  return (
+                    <li
+                      key={ind}
+                      className="p-3 transition-all duration-300 rounded-lg hover:bg-accent-1"
+                    >
+                      <NavigationMenuLink asChild>
+                        <Link href={link.href}>
+                          <div className="flex items-start space-x-3">
+                            <Image
+                              src={link.icon}
+                              alt={link.title}
+                              width={20}
+                              height={20}
+                              className="mt-1.5"
+                            />
+                            <div>
+                              <p className="mb-1 text-base font-display text-typography-100">
+                                {link.title}
+                              </p>
+                              <p className="text-sm font-display text-typography-50">
+                                {link.description}
+                              </p>
+                            </div>
+                          </div>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                  );
+                })}
+              </div>
+              <div className="px-2">
+                <p className="border-[1px] border-typography-10 h-full"></p>
+              </div>
+              <div className="flex-1">
+                {products.slice(5, 10).map((link, ind) => {
+                  return (
+                    <li
+                      key={ind}
+                      className="p-3 transition-all duration-300 rounded-lg hover:bg-accent-1"
+                    >
+                      <NavigationMenuLink asChild>
+                        <Link href={link.href}>
+                          <div className="flex items-start space-x-3">
+                            <Image
+                              src={link.icon}
+                              alt={link.title}
+                              width={20}
+                              height={20}
+                              className="mt-1.5"
+                            />
+                            <div>
+                              <p className="mb-1 text-base font-display text-typography-100">
+                                {link.title}
+                              </p>
+                              <p className="text-sm font-display text-typography-50">
+                                {link.description}
+                              </p>
+                            </div>
+                          </div>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                  );
+                })}
+              </div>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -137,7 +228,7 @@ export function MobileNavMenus() {
           Products
         </AccordionTrigger>
         <AccordionContent>
-          <div className="flex flex-col space-y-2 pl-4">
+          <div className="flex flex-col pl-4 space-y-2">
             {products.map((item) => (
               <Link
                 key={item.title}
@@ -156,7 +247,7 @@ export function MobileNavMenus() {
           Resources
         </AccordionTrigger>
         <AccordionContent>
-          <div className="flex flex-col space-y-2 pl-4">
+          <div className="flex flex-col pl-4 space-y-2">
             {resources.map((item) => (
               <Link
                 key={item.title}
@@ -197,7 +288,7 @@ const ListItem = React.forwardRef<
         >
           <>
             <div className="text-sm font-medium leading-none">{title}</div>
-            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            <p className="text-sm leading-snug line-clamp-2 text-muted-foreground">
               {children}
             </p>
           </>
