@@ -8,11 +8,11 @@ import { Menu } from "lucide-react";
 export default function Header() {
   return (
     <div className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex items-center justify-between h-16">
+      <div className="flex items-center justify-between h-16 app-container">
         <div className="flex items-center gap-2">
           <Link href="/">
-            <span className="text-xl font-semibold text-slate-900">
-              <span className="font-bold text-primary-500">O</span>utreachful
+            <span className="text-xl font-semibold md:text-3xl font-display text-brand-100">
+              Outreachful
             </span>
           </Link>
         </div>
