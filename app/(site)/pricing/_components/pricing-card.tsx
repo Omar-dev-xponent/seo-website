@@ -18,7 +18,7 @@ const PricingCard = ({ planDetails }: { planDetails: IPlanDetails }) => {
         <span className="text-sm sm:text-base group-hover:text-white text-typography-75 font-display">
           {planDetails.title}
         </span>
-        <p className="my-3 space-x-1 text-3xl font-semibold sm:text-4xl sm:my-4 group-hover:text-white text-typography-100 font-display">
+        <p className="my-3 space-x-1 text-4xl font-semibold sm:text-4xl sm:my-4 group-hover:text-white text-typography-100 font-display">
           {planDetails.price}{" "}
           <span className="text-sm font-normal group-hover:text-white text-typography-75">
             {planDetails.frequency}
