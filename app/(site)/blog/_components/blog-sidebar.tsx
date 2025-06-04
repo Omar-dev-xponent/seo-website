@@ -24,7 +24,11 @@ const BlogSideBar = () => {
         <p className="mb-4 text-base font-semibold sm:text-lg sm:mb-5 font-display text-brand-100">
           Blog categories
         </p>
-        <Tabs defaultValue="account" orientation="vertical" className="w-full ">
+        <Tabs
+          defaultValue={categories[0]}
+          orientation="vertical"
+          className="w-full "
+        >
           <TabsList className="flex flex-col w-full h-auto space-y-1 bg-transparent ">
             {categories.map((category) => (
               <TabsTrigger

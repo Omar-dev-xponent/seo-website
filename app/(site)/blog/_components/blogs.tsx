@@ -2,6 +2,7 @@ import React from "react";
 import LatestBlogCard from "@/app/(site)/blog/_components/latest-blog-card";
 import BlogSideBar from "@/app/(site)/blog/_components/blog-sidebar";
 import BlogCard from "@/app/(site)/blog/_components/blog-card";
+import BlogPagination from "@/app/(site)/blog/_components/blog-pagination";
 
 const Blogs = () => {
   const blogs = [
@@ -59,14 +60,17 @@ const Blogs = () => {
     },
   ];
   return (
-    <section className="py-8 md:py-24 sm:py-12">
+    <section className="py-8 overflow-x-hidden md:py-24 sm:py-12">
       <LatestBlogCard />
       <div className="flex flex-col pt-8 pb-5 space-y-4 sm:pb-8 sm:pt-12 md:space-y-0 md:space-x-16 md:flex-row app-container">
         <BlogSideBar />
-        <div className="grid w-full grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-          {blogs.map((blog, ind) => {
-            return <BlogCard key={ind} blog={blog} />;
-          })}
+        <div className="w-full">
+          <div className="grid w-full grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+            {blogs.map((blog, ind) => {
+              return <BlogCard key={ind} blog={blog} />;
+            })}
+          </div>
+          <BlogPagination />
         </div>
       </div>
     </section>
