@@ -1,14 +1,14 @@
-type DiamondCircleSVGProps = {
+type AquaCircleSVGProps = {
   width?: number | string;
   height?: number | string;
   className?: string;
 };
 
-const DiamondCircleSVG = ({
+const AquaCircleSVG = ({
   width = "100%",
   height = "100%",
   className,
-}: DiamondCircleSVGProps) => (
+}: AquaCircleSVGProps) => (
   <svg
     width={width}
     height={height}
@@ -96,4 +96,4 @@ const DiamondCircleSVG = ({
   </svg>
 );
 
-export default DiamondCircleSVG;
+export default AquaCircleSVG;

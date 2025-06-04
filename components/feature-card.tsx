@@ -16,7 +16,7 @@ const FeatureCard = ({ feature, className }: FeatureCardProps) => {
   return (
     <div
       className={twMerge(
-        "flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0",
+        "flex flex-col items-start md:items-center justify-between space-y-6 md:flex-row md:space-y-0",
         className
       )}
     >
@@ -47,7 +47,7 @@ const FeatureCard = ({ feature, className }: FeatureCardProps) => {
         )}
       </div>
       <div
-        className={`p-6 md:w-1/2 max-h-[400px] max-w-[514px] bg-accent-1 sm:p-9 rounded-xl`}
+        className={`p-6 md:w-1/2 max-h-[400px] self-center max-w-[514px] bg-accent-1 sm:p-9 rounded-xl`}
       >
         <Image
           src={feature.image}

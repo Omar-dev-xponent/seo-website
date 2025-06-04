@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-import DiamondCircleSVG from "@/components/svg-defs/DiamondCircleSVG";
+import AquaCircleSVG from "@/app/(site)/_components/svg-defs/AquaCircleSVG";
 
 const HeroSection = () => {
   return (
@@ -56,10 +56,10 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="absolute pointer-events-none -z-10 top-10 -left-10 lg:-top-20 lg:-left-16">
-        <DiamondCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
+        <AquaCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
       </div>
       <div className="-z-10 absolute -top-24 lg:-top-52 right-0 scale-x-[-1] pointer-events-none">
-        <DiamondCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
+        <AquaCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
       </div>
     </section>
   );
