@@ -10,7 +10,7 @@ const LatestBlogCard = () => {
       <p className="text-base text-center font-display text-typography-50">
         Quickly discover the best domains tailored to your keywords.
       </p>
-      <div className="w-full h-full overflow-hidden rounded-2xl max-h-[432px] mt-12">
+      <div className="w-full h-full overflow-hidden mt-7 sm:mt-12 rounded-2xl">
         <Image
           src={"/blog/blog01.png"}
           alt="blog-image"
@@ -20,13 +20,13 @@ const LatestBlogCard = () => {
           className="object-cover w-full h-full rounded-2xl"
         />
       </div>
-      <p className="flex items-center space-x-1 text-sm my-7 text-typography-50 font-display sm">
+      <p className="flex items-center my-5 space-x-1 text-sm sm:my-7 text-typography-50 font-display sm">
         <LuClock className="text-base" /> <span>5 mins read</span>
       </p>
-      <p className="text-2xl font-medium text-typography-100 font-display">
+      <p className="text-xl font-medium sm:text-2xl text-typography-100 font-display">
         Lorem Ipsum Lorem Ipsum
       </p>
-      <p className="my-6 text-base font-display text-typography-50">
+      <p className="my-4 text-sm sm:text-base sm:my-6 font-display text-typography-50">
         A link-building SEO SaaS is a software tool designed to help businesses
         improve their search engine rankings.
       </p>
