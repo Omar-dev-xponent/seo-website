@@ -35,7 +35,7 @@ const Footer = () => {
     { label: "Blog", path: "/blog" },
   ];
   return (
-    <footer className="relative overflow-hidden">
+    <footer className="relative z-10 overflow-hidden">
       <div className="app-container relative flex flex-wrap gap-8 justify-between border-t-[1px] border-typography-25 py-6 sm:pb-7 sm:pt-16">
         {/* footer div one */}
         <div className="flex flex-col justify-between gap-9">
@@ -125,10 +125,10 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="absolute left-0 hidden pointer-events-none sm:block -top-32">
+      <div className="absolute left-0 hidden pointer-events-none -z-10 sm:block -top-32">
         <DiamondCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
       </div>
-      <div className="absolute right-0 -bottom-28 sm:-bottom-56 scale-x-[-1] pointer-events-none">
+      <div className="-z-10 absolute right-0 -bottom-28 sm:-bottom-56 scale-x-[-1] pointer-events-none">
         <DiamondCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
       </div>
     </footer>

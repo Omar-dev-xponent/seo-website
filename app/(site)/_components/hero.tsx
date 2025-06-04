@@ -6,7 +6,7 @@ import DiamondCircleSVG from "@/components/svg-defs/DiamondCircleSVG";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full bg-white">
+    <section className="relative z-10 w-full bg-white">
       <div className="relative flex flex-col items-center justify-center w-full py-10 sm:py-16 md:py-24 app-container">
         <h1 className="sm:text-4xl md:text-6xl text-3xl font-semibold leading-10 sm:leading-[48px] sm:font-bold text-center md:leading-[80px] font-display text-typography-100">
           Finally, the{" "}
@@ -41,7 +41,7 @@ const HeroSection = () => {
           />
           <div>
             <button className="absolute flex items-center justify-center w-10 h-10 p-0 transition-all duration-300 -translate-x-1/2 -translate-y-1/2 rounded-full cursor-pointer md:p-5 md:w-16 md:h-16 hover:bg-background-hover bg-brand-100 top-1/2 left-1/2 ">
-              <div className="w-4 h-4 mb-1 md:w-6 md:h-6">
+              <div className="w-3.5 h-3.5 mb-0.5 md:w-6 md:h-6">
                 <Image
                   src={"/icons/play.svg"}
                   width={0}
@@ -55,10 +55,10 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="absolute pointer-events-none top-10 -left-10 lg:-top-20 lg:-left-16">
+      <div className="absolute pointer-events-none -z-10 top-10 -left-10 lg:-top-20 lg:-left-16">
         <DiamondCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
       </div>
-      <div className="absolute -top-24 lg:-top-52 right-0 scale-x-[-1] pointer-events-none">
+      <div className="-z-10 absolute -top-24 lg:-top-52 right-0 scale-x-[-1] pointer-events-none">
         <DiamondCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
       </div>
     </section>

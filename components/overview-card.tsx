@@ -15,7 +15,7 @@ const OverviewCard = ({
 }: OverviewCardProps) => {
   return (
     <div
-      className="object-cover bg-center bg-no-repeat bg-cover px-7 pt-7 sm:pt-12 rounded-xl"
+      className="relative object-cover bg-center bg-no-repeat bg-cover px-7 pt-7 sm:pt-12 rounded-xl"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <h4 className="mb-3 text-xl font-semibold text-center sm:mb-4 sm:text-4xl text-typography-100 font-display">
@@ -34,6 +34,7 @@ const OverviewCard = ({
           className="object-cover w-full h-auto max-w-4xl"
         />
       </div>
+      <div className="w-full absolute bottom-0 left-0 h-[43px] flex-shrink-0 bg-[linear-gradient(180deg,rgba(234,240,255,0.03)_0%,rgba(234,240,255,0.5)_100%)]"></div>
     </div>
   );
 };
