@@ -64,17 +64,16 @@ const SiteDbFeature = () => {
           ))}
         </div>
       </div>
-      <div className="absolute -z-10 right-0 lg:block hidden pointer-events-none scale-x-[-1] sm:scale-x-[1] top- 0 sm:-left-10">
+      <div className="absolute -z-10 right-0 xl:block hidden pointer-events-none scale-x-[-1] sm:scale-x-[1] top- 0 sm:-left-10">
         <PeachCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
       </div>
-      <div className="-z-10 absolute top-[1400px] sm:top-[500px] right-0 scale-x-[-1] pointer-events-none">
+      <div className="-z-10 absolute top-[1200px] sm:top-[500px] right-0 scale-x-[-1] pointer-events-none">
         <PeachCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
       </div>
-      <div className="-z-10 absolute top-[200px] sm:top-[1900px] right-0 scale-x-[-1] pointer-events-none">
+      <div className="-z-10 xl:block hidden absolute top-[200px] sm:top-[1900px] right-0 scale-x-[-1] pointer-events-none">
         <PeachCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
       </div>
-
-      <div className="-z-10 absolute right-0 pointer-events-none lg:block hidden scale-x-[-1] sm:scale-x-[1] top-[1400px] sm:-left-10">
+      <div className="-z-10 absolute right-0 pointer-events-none xl:block hidden scale-x-[-1] sm:scale-x-[1] top-[1400px] sm:-left-10">
         <PeachCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
       </div>
     </section>
