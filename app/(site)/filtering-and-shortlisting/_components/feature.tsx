@@ -1,6 +1,7 @@
 import React from "react";
 import FeatureCard from "@/components/feature-card";
 import OverviewCard from "@/components/overview-card";
+import PurpleCircleSVG from "@/components/svg-defs/PurpleCircleSVG";
 
 const FilteringAndShortlistingFeature = () => {
   const features = [
@@ -44,30 +45,44 @@ const FilteringAndShortlistingFeature = () => {
     },
   ];
   return (
-    <section className="app-container">
-      <div className="pb-8 space-y-6 md:pb-24 sm:pb-12 sm:space-y-10">
-        {features.slice(0, 2).map((feature, index) => (
-          <FeatureCard
-            key={index}
-            feature={feature}
-            className={index === 1 ? "md:flex-row-reverse" : ""}
-          />
-        ))}
+    <section className="relative z-10 bg-white">
+      <div className="app-container">
+        <div className="pb-8 space-y-6 md:pb-24 sm:pb-12 sm:space-y-10">
+          {features.slice(0, 2).map((feature, index) => (
+            <FeatureCard
+              key={index}
+              feature={feature}
+              className={index === 1 ? "md:flex-row-reverse" : ""}
+            />
+          ))}
+        </div>
+        <OverviewCard
+          title="One-click site management"
+          description={`Build your outreach list directly from the database. Just select, \n save, and assign to any campaign or client project instantly.`}
+          image="/home/client-list.png"
+          bgImage="/overview-accent-bg.png"
+        />
+        <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
+          {features.slice(2, 4).map((feature, index) => (
+            <FeatureCard
+              key={index}
+              feature={feature}
+              className={index === 1 ? "md:flex-row-reverse" : ""}
+            />
+          ))}
+        </div>
       </div>
-      <OverviewCard
-        title="One-click site management"
-        description={`Build your outreach list directly from the database. Just select, \n save, and assign to any campaign or client project instantly.`}
-        image="/home/client-list.png"
-        bgImage="/overview-accent-bg.png"
-      />
-      <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
-        {features.slice(2, 4).map((feature, index) => (
-          <FeatureCard
-            key={index}
-            feature={feature}
-            className={index === 1 ? "md:flex-row-reverse" : ""}
-          />
-        ))}
+      <div className="-z-10 absolute top-[450px] sm:top-[500px] right-0 scale-x-[-1] pointer-events-none">
+        <PurpleCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      </div>
+      <div className="-z-10 absolute pointer-events-none xl:block hidden top-[800px] scale-x-[-1] sm:scale-x-[1] sm:top-0 right-0 sm:-left-10">
+        <PurpleCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      </div>
+      <div className="-z-10 absolute xl:block hidden xl:top-[2000px] right-0 scale-x-[-1] pointer-events-none">
+        <PurpleCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      </div>
+      <div className="-z-10 absolute right-0 pointer-events-none xl:block hidden scale-x-[-1] sm:scale-x-[1] top-[1400px] sm:-left-10">
+        <PurpleCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
       </div>
     </section>
   );
