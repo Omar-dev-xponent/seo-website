@@ -99,7 +99,7 @@ const resources: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Testimonials",
-    href: "#",
+    href: "/testimonials",
     description: "Success stories from satisfied customers.",
   },
   {

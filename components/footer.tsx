@@ -30,7 +30,7 @@ const Footer = () => {
     { label: "Link Monitoring", path: "/link-monitoring" },
   ];
   const resourcesLinks = [
-    { label: "Testimonial", path: "/testimonial" },
+    { label: "Testimonial", path: "/testimonials" },
     { label: "Pricing", path: "/pricing" },
     { label: "Blog", path: "/blog" },
   ];
