@@ -64,7 +64,7 @@ const SiteDbFeature = () => {
           ))}
         </div>
       </div>
-      <div className="absolute -z-10 right-0 xl:block hidden pointer-events-none scale-x-[-1] sm:scale-x-[1] top- 0 sm:-left-10">
+      <div className="absolute -z-10 right-0 xl:block hidden pointer-events-none scale-x-[-1] sm:scale-x-[1] top-0 sm:-left-10">
         <PeachCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
       </div>
       <div className="-z-10 absolute top-[1200px] sm:top-[500px] right-0 scale-x-[-1] pointer-events-none">
