@@ -1,6 +1,7 @@
 import React from "react";
 import FeatureCard from "@/components/feature-card";
 import OverviewCard from "@/components/overview-card";
+import RedCircleSVG from "@/components/svg-defs/RedCircleSVG";
 
 const Feature = () => {
   const features = [
@@ -30,40 +31,53 @@ const Feature = () => {
     },
   ];
   return (
-    <section className="app-container">
-      <div className="pb-8 space-y-6 md:pb-24 sm:pb-12 sm:space-y-10">
-        {features.slice(0, 2).map((feature, index) => (
-          <FeatureCard
-            key={index}
-            feature={feature}
-            className={index === 1 ? "md:flex-row-reverse" : ""}
-          />
-        ))}
-      </div>
-      <OverviewCard
-        title="Save and reuse across campaigns"
-        description={`Build your own pitch library. Save high-performing emails and reuse them across \n campaigns with one click. Organize by campaign type or niche.`}
-        image="/home/client-list.png"
-        bgImage="/overview-accent-bg.png"
-      />
-      <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
-        {features.slice(2, 4).map((feature, index) => (
-          <FeatureCard
-            key={index}
-            feature={feature}
-            className={index === 1 ? "md:flex-row-reverse" : ""}
-          />
-        ))}
-      </div>
-      <div className="pb-8 md:pb-24 sm:pb-12">
+    <section className="relative z-10">
+      <div className="app-container">
+        <div className="pb-8 space-y-6 md:pb-24 sm:pb-12 sm:space-y-10">
+          {features.slice(0, 2).map((feature, index) => (
+            <FeatureCard
+              key={index}
+              feature={feature}
+              className={index === 1 ? "md:flex-row-reverse" : ""}
+            />
+          ))}
+        </div>
         <OverviewCard
-          title="Seamless campaign integration"
-          description={`Insert any pitch directly while setting up your campaign. No switching tabs. \n No breaking flow. It’s built right into your outreach setup.`}
+          title="Save and reuse across campaigns"
+          description={`Build your own pitch library. Save high-performing emails and reuse them across \n campaigns with one click. Organize by campaign type or niche.`}
           image="/home/client-list.png"
-          bgImage="/overview-light-teal-bg.png"
+          bgImage="/overview-accent-bg.png"
         />
+        <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
+          {features.slice(2, 4).map((feature, index) => (
+            <FeatureCard
+              key={index}
+              feature={feature}
+              className={index === 1 ? "md:flex-row-reverse" : ""}
+            />
+          ))}
+        </div>
+        <div className="pb-8 md:pb-24 sm:pb-12">
+          <OverviewCard
+            title="Seamless campaign integration"
+            description={`Insert any pitch directly while setting up your campaign. No switching tabs. \n No breaking flow. It’s built right into your outreach setup.`}
+            image="/home/client-list.png"
+            bgImage="/overview-light-teal-bg.png"
+          />
+        </div>
       </div>
-      <div />
+      <div className="-z-10 absolute top-[350px] sm:top-[500px] right-0 scale-x-[-1] pointer-events-none">
+        <RedCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      </div>
+      <div className="-z-10 absolute pointer-events-none xl:block hidden top-[800px] scale-x-[-1] sm:scale-x-[1] sm:top-0 right-0 sm:-left-10">
+        <RedCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      </div>
+      <div className="-z-10 absolute xl:block hidden xl:top-[2000px] right-0 scale-x-[-1] pointer-events-none">
+        <RedCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      </div>
+      <div className="-z-10 absolute right-0 pointer-events-none xl:block hidden scale-x-[-1] sm:scale-x-[1] top-[1400px] sm:-left-10">
+        <RedCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      </div>
     </section>
   );
 };
