@@ -3,6 +3,7 @@ import LatestBlogCard from "@/app/(site)/blog/_components/latest-blog-card";
 import BlogSideBar from "@/app/(site)/blog/_components/blog-sidebar";
 import BlogCard from "@/app/(site)/blog/_components/blog-card";
 import BlogPagination from "@/app/(site)/blog/_components/blog-pagination";
+import BlueCircleSVG from "@/components/svg-defs/BlueCircleSVG";
 
 const Blogs = () => {
   const blogs = [
@@ -60,7 +61,7 @@ const Blogs = () => {
     },
   ];
   return (
-    <section className="py-8 overflow-x-hidden md:py-24 sm:py-12">
+    <section className="relative z-10 py-8 overflow-x-hidden md:py-24 sm:py-12">
       <LatestBlogCard />
       <div className="flex flex-col pt-8 pb-5 space-y-4 sm:pb-8 sm:pt-12 md:space-y-0 md:space-x-16 md:flex-row app-container">
         <BlogSideBar />
@@ -72,6 +73,9 @@ const Blogs = () => {
           </div>
           <BlogPagination />
         </div>
+      </div>
+      <div className="-z-10 absolute top-[550px] md:top-[1400px] right-0 md:left-0 md:scale-x-[1] scale-x-[-1]  pointer-events-none">
+        <BlueCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
       </div>
     </section>
   );

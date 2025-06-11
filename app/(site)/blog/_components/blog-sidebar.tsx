@@ -17,7 +17,7 @@ const BlogSideBar = () => {
         <RiSearchLine className="text-xl text-typography-75" />
         <Input
           placeholder="Search"
-          className="flex-1 h-full text-sm border-none sm:text-base text-typography-50 font-display placeholder:text-typography-50 placeholder:font-display placeholder:text-base focus-visible:ring-offset-0 focus-visible:ring-0"
+          className="flex-1 h-full text-sm bg-transparent border-none sm:text-base text-typography-50 font-display placeholder:text-typography-50 placeholder:font-display placeholder:text-base focus-visible:ring-offset-0 focus-visible:ring-0"
         />
       </form>
       <div>
