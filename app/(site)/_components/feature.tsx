@@ -104,23 +104,23 @@ const FeaturesSection = () => {
         </div>
       </div>
 
-      <div className="absolute -z-10 right-0 lg:block hidden pointer-events-none scale-x-[-1] sm:scale-x-[1] top-40 sm:-left-10">
-        <AquaCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      <div className="absolute -z-10 right-0 lg:block hidden pointer-events-none scale-x-[-1] sm:scale-x-[1] top-40 sm:-left-10 w-full h-full max-w-[232px] max-h-[320px] xl:max-w-[577px] xl:max-h-[741px]">
+        <AquaCircleSVG />
       </div>
-      <div className="-z-10 absolute pointer-events-none top-[800px] scale-x-[-1] sm:scale-x-[1] sm:top-[1200px] right-0 sm:-left-10">
-        <AquaCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      <div className="-z-10 absolute pointer-events-none top-[800px] scale-x-[-1] sm:scale-x-[1] sm:top-[1200px] right-0 sm:-left-10 w-full h-full max-w-[232px] max-h-[320px] xl:max-w-[577px] xl:max-h-[741px]">
+        <AquaCircleSVG />
       </div>
-      <div className="-z-10 absolute top-[1400px] sm:top-[650px] right-0 scale-x-[-1] pointer-events-none">
-        <AquaCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      <div className="-z-10 absolute top-[1400px] sm:top-[650px] right-0 scale-x-[-1] pointer-events-none w-full h-full max-w-[232px] max-h-[320px] xl:max-w-[577px] xl:max-h-[741px]">
+        <AquaCircleSVG />
       </div>
-      <div className="-z-10 absolute lg:top-[1600px] lg:block hidden right-0 scale-x-[-1] pointer-events-none">
-        <AquaCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      <div className="-z-10 absolute lg:top-[1600px] lg:block hidden right-0 scale-x-[-1] pointer-events-none w-full h-full max-w-[232px] max-h-[320px] xl:max-w-[577px] xl:max-h-[741px]">
+        <AquaCircleSVG />
       </div>
-      <div className="-z-10 absolute top-[200px] sm:top-[2600px] right-0 scale-x-[-1] pointer-events-none">
-        <AquaCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      <div className="-z-10 absolute top-[200px] sm:top-[2600px] right-0 scale-x-[-1] pointer-events-none w-full h-full max-w-[232px] max-h-[320px] xl:max-w-[577px] xl:max-h-[741px]">
+        <AquaCircleSVG />
       </div>
-      <div className="-z-10 absolute right-0 pointer-events-none lg:block hidden scale-x-[-1] sm:scale-x-[1] top-[2000px] sm:-left-10">
-        <AquaCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      <div className="-z-10 absolute right-0 pointer-events-none lg:block hidden scale-x-[-1] sm:scale-x-[1] top-[2000px] sm:-left-10 w-full h-full max-w-[232px] max-h-[320px] xl:max-w-[577px] xl:max-h-[741px]">
+        <AquaCircleSVG />
       </div>
     </section>
   );

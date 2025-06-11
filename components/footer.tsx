@@ -125,10 +125,10 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="absolute left-0 hidden pointer-events-none -z-10 sm:block -top-32">
+      <div className="-z-10 absolute right-0 -bottom-28 sm:-bottom-56 scale-x-[-1] pointer-events-none">
         <DiamondCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
       </div>
-      <div className="-z-10 absolute right-0 -bottom-28 sm:-bottom-56 scale-x-[-1] pointer-events-none">
+      <div className="absolute left-0 hidden pointer-events-none -z-10 sm:block -top-32">
         <DiamondCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
       </div>
     </footer>

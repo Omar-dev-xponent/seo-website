@@ -55,11 +55,12 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="absolute pointer-events-none -z-10 top-10 -left-10 lg:-top-20 lg:-left-16">
-        <AquaCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
+
+      <div className="absolute pointer-events-none -z-10 top-10 -left-10 lg:-top-20 lg:-left-16 w-full h-full max-w-[232px] max-h-[320px] xl:max-w-[577px] xl:max-h-[741px]">
+        <AquaCircleSVG />
       </div>
-      <div className="-z-10 absolute -top-24 lg:-top-52 right-0 scale-x-[-1] pointer-events-none">
-        <AquaCircleSVG className="w-full h-full lg:max-w-[577px] lg:h-[741px]" />
+      <div className="-z-10 absolute -top-20 xl:-top-52 right-0 scale-x-[-1] pointer-events-none w-full h-full max-w-[232px] max-h-[320px] xl:max-w-[577px] xl:max-h-[741px]">
+        <AquaCircleSVG />
       </div>
     </section>
   );
