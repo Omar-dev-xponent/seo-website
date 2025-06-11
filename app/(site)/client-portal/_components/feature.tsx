@@ -43,7 +43,7 @@ const ClientPortalFeature = () => {
   return (
     <section className="relative z-10 ">
       <div className="app-container">
-        <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
+        <div className="py-8 space-y-6 md:py-24 sm:py-12 md:space-y-24">
           {features.slice(0, 2).map((feature, index) => (
             <FeatureCard
               key={index}
@@ -58,7 +58,7 @@ const ClientPortalFeature = () => {
           image="/home/client-list.png"
           bgImage="/overview-accent-bg.png"
         />
-        <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
+        <div className="py-8 space-y-6 md:py-24 sm:py-12 md:space-y-24">
           {features.slice(2, 3).map((feature, index) => (
             <FeatureCard
               key={index}

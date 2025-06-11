@@ -93,7 +93,7 @@ const FeaturesSection = () => {
           image="/home/client-list.png"
           bgImage="/overview-accent-bg.png"
         />
-        <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-20">
+        <div className="py-8 space-y-6 md:py-24 sm:py-12 md:space-y-20">
           {features.slice(3, 5).map((feature, index) => (
             <FeatureCard
               key={index}
