@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-import PeachCircleSVG from "@/app/(site)/site-database/_components/svg-defs/PeachCircleSVG";
+import PeachCircleSVG from "@/components/svg-defs/PeachCircleSVG";
 
 const SiteDbHeroSection = () => {
   return (

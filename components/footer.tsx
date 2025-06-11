@@ -4,7 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { RiTwitterXFill } from "react-icons/ri";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
-import DiamondCircleSVG from "@/app/(site)/_components/svg-defs/AquaCircleSVG";
+import DiamondCircleSVG from "@/components/svg-defs/AquaCircleSVG";
 const Footer = () => {
   const socialLinks = [
     { label: "Facebook", icon: FaFacebook, path: "/" },

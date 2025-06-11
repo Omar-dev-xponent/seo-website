@@ -1,6 +1,7 @@
 import React from "react";
 import FeatureCard from "@/components/feature-card";
 import OverviewCard from "@/components/overview-card";
+import BlueCircleSVG from "@/components/svg-defs/BlueCircleSVG";
 
 const ClientPortalFeature = () => {
   const features = [
@@ -40,30 +41,41 @@ const ClientPortalFeature = () => {
     },
   ];
   return (
-    <section className="app-container">
-      <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
-        {features.slice(0, 2).map((feature, index) => (
-          <FeatureCard
-            key={index}
-            feature={feature}
-            className={index === 1 ? "md:flex-row-reverse" : ""}
-          />
-        ))}
+    <section className="relative z-10 ">
+      <div className="app-container">
+        <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
+          {features.slice(0, 2).map((feature, index) => (
+            <FeatureCard
+              key={index}
+              feature={feature}
+              className={index === 1 ? "md:flex-row-reverse" : ""}
+            />
+          ))}
+        </div>
+        <OverviewCard
+          title="Live link monitoring & reporting"
+          description={`Automated reports with link status and domain metrics—clear, \n visual updates your clients will love.`}
+          image="/home/client-list.png"
+          bgImage="/overview-accent-bg.png"
+        />
+        <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
+          {features.slice(2, 3).map((feature, index) => (
+            <FeatureCard
+              key={index}
+              feature={feature}
+              className={index === 1 ? "md:flex-row-reverse" : ""}
+            />
+          ))}
+        </div>
       </div>
-      <OverviewCard
-        title="Live link monitoring & reporting"
-        description={`Automated reports with link status and domain metrics—clear, \n visual updates your clients will love.`}
-        image="/home/client-list.png"
-        bgImage="/overview-accent-bg.png"
-      />
-      <div className="py-8 space-y-6 md:py-24 sm:py-12 sm:space-y-10">
-        {features.slice(2, 3).map((feature, index) => (
-          <FeatureCard
-            key={index}
-            feature={feature}
-            className={index === 1 ? "md:flex-row-reverse" : ""}
-          />
-        ))}
+      <div className="-z-10 absolute top-[500px] sm:top-[400px] right-0 scale-x-[-1] pointer-events-none">
+        <BlueCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      </div>
+      <div className="absolute -z-10 right-0 xl:block hidden pointer-events-none scale-x-[1] top-20 sm:-left-10">
+        <BlueCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
+      </div>
+      <div className="-z-10 absolute right-0 pointer-events-none xl:block hidden scale-x-[1] top-[1500px] sm:-left-10">
+        <BlueCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
       </div>
     </section>
   );

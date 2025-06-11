@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureCard from "@/components/feature-card";
 import OverviewCard from "@/components/overview-card";
-import PeachCircleSVG from "@/app/(site)/site-database/_components/svg-defs/PeachCircleSVG";
+import PeachCircleSVG from "@/components/svg-defs/PeachCircleSVG";
 
 const SiteDbFeature = () => {
   const features = [

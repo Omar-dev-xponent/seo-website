@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-import AquaCircleSVG from "@/app/(site)/_components/svg-defs/AquaCircleSVG";
+import AquaCircleSVG from "@/components/svg-defs/AquaCircleSVG";
 
 const HeroSection = () => {
   return (
