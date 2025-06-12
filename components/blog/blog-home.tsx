@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 import React, { Suspense } from "react";
-import Loading from "@/app/blog/loading";
+import Loading from "@/app/blog-prev/loading";
 import BlogCategories from "./blog-categories";
 import Hero from "./hero";
 import PostGrid from "./post-grid";
@@ -37,9 +37,9 @@ const BlogHome: React.FC<BlogHomeProps> = ({ posts, categories }) => {
   return (
     <div>
       <Hero title={title} description={description} />
-      <div className="relative bg-theme-gray pt-16 pb-20 lg:pt-16">
-        <div className="relative max-w-7xl mx-auto px-4 lg:px-12">
-          <div className="text-center mb-8">
+      <div className="relative pt-16 pb-20 bg-theme-gray lg:pt-16">
+        <div className="relative px-4 mx-auto max-w-7xl lg:px-12">
+          <div className="mb-8 text-center">
             <h2 className="text-2xl font-medium tracking-tight text-slate-900 sm:text-3xl">
               Recent Posts
             </h2>
@@ -50,8 +50,8 @@ const BlogHome: React.FC<BlogHomeProps> = ({ posts, categories }) => {
         </div>
       </div>
       <div className="">
-        <div className="max-w-7xl mx-auto px-4 lg:px-12 pb-20">
-          <div className="text-center mb-8">
+        <div className="px-4 pb-20 mx-auto max-w-7xl lg:px-12">
+          <div className="mb-8 text-center">
             <h2 className="text-2xl font-medium tracking-tight text-slate-900 sm:text-3xl">
               Browse Categories
             </h2>

@@ -5,12 +5,6 @@ import ReviewSection from "@/app/(site)/_components/review";
 import BrandSection from "@/components/brand";
 import ValuePropositionSection from "@/app/(site)/_components/value-proposition";
 import TrialCTA from "@/components/trial-cta";
-import { ComparisonSection } from "./_componentsPrev/comparison";
-import { CalculatorSection } from "./_componentsPrev/calculator";
-import TestimonialsSection from "./_componentsPrev/testimonials";
-import PricingSection from "./_componentsPrev/pricing";
-import ContactCtaSection from "./_componentsPrev/contact-cta";
-import FaqSection from "./_componentsPrev/faq";
 
 export const metadata = {
   title:
@@ -31,12 +25,6 @@ export default function HomePage() {
         title={`Lock in 30% off for 3 months. \n Limited time only!`}
         description={`Start risk-free with free migration assistance and a 30-day \n money-back guarantee`}
       />
-      {/* <ComparisonSection /> */}
-      {/* <CalculatorSection /> */}
-      {/* <TestimonialsSection /> */}
-      {/* <PricingSection /> */}
-      {/* <ContactCtaSection /> */}
-      {/* <FaqSection /> */}
     </>
   );
 }

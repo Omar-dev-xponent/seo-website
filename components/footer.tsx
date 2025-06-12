@@ -38,13 +38,14 @@ const Footer = () => {
     <footer className="relative z-10 overflow-hidden">
       <div className="app-container relative flex flex-wrap gap-8 justify-between border-t-[1px] border-typography-25 py-6 sm:pb-7 sm:pt-16">
         {/* footer div one */}
-        <div className="flex flex-col justify-between gap-9">
+        <div className="flex flex-col justify-between order-4 w-full lg:w-auto gap-9 lg:order-1">
           <div>
             <h6 className="text-xl font-semibold sm:text-4xl font-display text-brand-100">
               Outreachful
             </h6>
             <p className="mt-2 text-sm sm:text-base sm:mt-4 text-typography-75 font-display">
-              Copyright &copy; Outreachfull 2025. All rights reserved
+              Copyright &copy; Outreachfull {new Date().getFullYear()}. All
+              rights reserved
             </p>
           </div>
           <div>
@@ -77,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
         {/* footer div two */}
-        <div>
+        <div className="order-1 lg:order-2">
           <h6 className="mb-6 text-xl font-medium sm:mb-7 text-typography-100 font-display">
             Product
           </h6>
@@ -95,7 +96,7 @@ const Footer = () => {
           </ul>
         </div>
         {/* footer div three */}
-        <div>
+        <div className="order-2 lg:order-3">
           <h6 className="mb-6 text-xl font-medium sm:mb-7 text-typography-100 font-display">
             Resource
           </h6>
@@ -113,7 +114,7 @@ const Footer = () => {
           </ul>
         </div>
         {/* footer div four */}
-        <div>
+        <div className="order-3 lg:order-4">
           <h6 className="mb-6 text-xl font-medium sm:mb-7 text-typography-100 font-display">
             Payment Method
           </h6>

@@ -31,62 +31,62 @@ const products: {
   {
     title: "Site Database",
     href: "/site-database",
-    description: "Lorem ipsum lorem ipsum lorem",
+    description: "Discover sites for link building",
     icon: "/icons/nav-icons/database.svg",
   },
   {
     title: "Client Portal",
     href: "client-portal",
-    description: "Lorem ipsum lorem ipsum lorem",
+    description: "One place for every client",
     tag: "New Addition",
     icon: "/icons/nav-icons/client-portal.svg",
   },
   {
     title: "Prospecting",
     href: "/prospecting",
-    description: "Lorem ipsum lorem ipsum lorem",
+    description: "Your prospecting starts right here",
     icon: "/icons/nav-icons/prospect.svg",
   },
   {
     title: "Filtering & Shortlisting",
     href: "/filtering-and-shortlisting",
-    description: "Lorem ipsum lorem ipsum lorem",
+    description: "Find the right opportunities faster",
     icon: "/icons/nav-icons/filtering.svg",
   },
   {
     title: "Pitch Copy Manager",
     href: "/pitch-copy-manager",
-    description: "Lorem ipsum lorem ipsum lorem",
+    description: "AI-Powered outreach templates",
     icon: "/icons/nav-icons/pitch-copy.svg",
   },
   {
     title: "Campaigns",
     href: "/campaign",
-    description: "Lorem ipsum lorem ipsum lorem",
+    description: "Automated outreach campaign hub",
     icon: "/icons/nav-icons/campaign.svg",
   },
   {
     title: "Reporting",
     href: "/reporting",
-    description: "Lorem ipsum lorem ipsum lorem",
+    description: "Real-time link building analytics",
     icon: "/icons/nav-icons/reporting.svg",
   },
   {
     title: "Team Management",
     href: "/team-management",
-    description: "Lorem ipsum lorem ipsum lorem",
+    description: "Collaborate & control access",
     icon: "/icons/nav-icons/team.svg",
   },
   {
     title: "Integrations",
     href: "/integrations",
-    description: "Lorem ipsum lorem ipsum lorem",
+    description: "Seamless tool connections hub",
     icon: "/icons/nav-icons/integrations.svg",
   },
   {
     title: "Link Monitoring",
     href: "/link-monitoring",
-    description: "Lorem ipsum lorem ipsum lorem",
+    description: "Real-time backlink tracker",
     icon: "/icons/nav-icons/link.svg",
   },
 ];
@@ -121,7 +121,7 @@ export function DesktopNavMenus() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Products</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="flex space-x-3 p-3 md:w-[450px] lg:w-[618px] ">
+            <ul className="flex space-x-3 p-3 md:w-[450px] lg:w-[650px] ">
               <div className="flex-1">
                 {products.slice(0, 5).map((link, ind) => {
                   return (
