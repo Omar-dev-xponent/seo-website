@@ -13,7 +13,6 @@ const VideoPlayer = ({
   videoSrc,
 }: VideoPlayerProps) => {
   const [playVideo, setPlayVideo] = useState<boolean>(false);
-  const [hasMounted, setHasMounted] = useState(false);
 
   return (
     <div
