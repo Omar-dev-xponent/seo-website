@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import VideoPlayer from "@/components/video-player";
 
 const ClientPortalHero = () => {
   const brands = [
@@ -43,27 +44,11 @@ const ClientPortalHero = () => {
           </div>
           {/* hero image  */}
           <div className="flex items-center justify-center w-full md:justify-end md:w-1/2">
-            <div className="w-full max-w-[467px] max-h-[350px] relative">
-              <Image
-                src={"/client-portal/hero.png"}
-                alt="Client Portal Hero"
-                width={467}
-                height={350}
-                className="object-cover  border-[1px] border-brand-100 rounded-xl"
-              />
-              <button className="absolute flex items-center justify-center w-10 h-10 p-0 transition-all duration-300 -translate-x-1/2 -translate-y-1/2 rounded-full cursor-pointer md:p-5 md:w-16 md:h-16 hover:bg-background-hover bg-brand-100 top-1/2 left-1/2 ">
-                <div className="w-3.5 h-3.5 mb-0.5 md:w-6 md:h-6">
-                  <Image
-                    src={"/icons/play.svg"}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto"
-                    alt="play button"
-                  />
-                </div>
-              </button>
-            </div>
+            <VideoPlayer
+              thumbnailSrc="/client-portal/hero.png"
+              videoSrc="https://www.youtube.com/embed/-RLgdfDdCMo?si=XBOS3ZpbMIHmaxw9&autoplay=1"
+              className="w-full max-w-[467px] max-h-[350px]"
+            />
           </div>
         </div>
         {/* brands-- */}
