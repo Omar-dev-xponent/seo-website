@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { BsArrowRight } from "react-icons/bs";
 import VideoPlayer from "@/components/video-player";
+import CTABtn from "@/components/cta-btn";
 
 const ClientPortalHero = () => {
   const brands = [
@@ -30,14 +28,7 @@ const ClientPortalHero = () => {
               See how teams and clients are transforming their{" "}
               <br className="hidden lg:block" /> outreach with our platform.
             </p>
-            <button>
-              <Link
-                href={"#"}
-                className="flex items-center px-4 py-3 mt-6 space-x-2 text-sm font-medium transition-all duration-300 rounded-md cursor-pointer md:mt-10 font-display md:text-xl md:px-6 md:py-4 text-brand-5 hover:bg-background-hover bg-brand-100"
-              >
-                <span>Try free 14 days</span> <BsArrowRight />
-              </Link>
-            </button>
+            <CTABtn title="Try free 14 days" href="#" />
             <p className="mt-4 text-base font-display text-typography-50">
               No credit card required
             </p>
@@ -46,7 +37,7 @@ const ClientPortalHero = () => {
           <div className="flex items-center justify-center w-full md:justify-end md:w-1/2">
             <VideoPlayer
               thumbnailSrc="/client-portal/hero.png"
-              videoSrc="https://www.youtube.com/embed/-RLgdfDdCMo?si=XBOS3ZpbMIHmaxw9&autoplay=1"
+              videoSrc="https://www.youtube.com/embed/-RLgdfDdCMo?si=XBOS3ZpbMIHmaxw9&autoplay=1&mute=1"
               className="w-full max-w-[467px] max-h-[350px]"
             />
           </div>

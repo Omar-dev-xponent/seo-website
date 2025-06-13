@@ -28,6 +28,7 @@ const VideoPlayer = ({
         height={0}
         sizes="100vw"
         className={`w-full h-auto ${playVideo ? "invisible" : "visible"}`}
+        onClick={() => setPlayVideo(true)}
       />
       <button
         onClick={() => setPlayVideo(true)}

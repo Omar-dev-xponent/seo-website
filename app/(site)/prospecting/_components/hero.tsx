@@ -1,3 +1,5 @@
+import CTABtn from "@/components/cta-btn";
+import VideoPlayer from "@/components/video-player";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -29,41 +31,19 @@ const ProspectingHero = () => {
               See how teams and clients are transforming their{" "}
               <br className="hidden lg:block" /> outreach with our platform.
             </p>
-            <button>
-              <Link
-                href={"#"}
-                className="flex items-center px-4 py-3 mt-6 space-x-2 text-sm font-medium transition-all duration-300 rounded-md cursor-pointer md:mt-10 font-display md:text-xl md:px-6 md:py-4 text-brand-5 hover:bg-background-hover bg-brand-100"
-              >
-                <span>Try free 14 days</span> <BsArrowRight />
-              </Link>
-            </button>
+            <CTABtn title="Try free 14 days" href="#" />
+
             <p className="mt-4 text-base font-display text-typography-50">
               No credit card required
             </p>
           </div>
           {/* hero image  */}
           <div className="flex items-center justify-center w-full md:justify-end md:w-1/2">
-            <div className="w-full max-w-[467px] max-h-[350px] relative">
-              <Image
-                src={"/prospecting/hero.png"}
-                alt="Client Portal Hero"
-                width={467}
-                height={350}
-                className="object-cover  border-[1px] border-brand-100 rounded-xl"
-              />
-              <button className="absolute flex items-center justify-center w-10 h-10 p-0 transition-all duration-300 -translate-x-1/2 -translate-y-1/2 rounded-full cursor-pointer md:p-5 md:w-16 md:h-16 hover:bg-background-hover bg-brand-100 top-1/2 left-1/2 ">
-                <div className="w-3.5 h-3.5 mb-0.5 md:w-6 md:h-6">
-                  <Image
-                    src={"/icons/play.svg"}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto"
-                    alt="play button"
-                  />
-                </div>
-              </button>
-            </div>
+            <VideoPlayer
+              thumbnailSrc="/client-portal/hero.png"
+              videoSrc="https://www.youtube.com/embed/-RLgdfDdCMo?si=XBOS3ZpbMIHmaxw9&autoplay=1&mute=1"
+              className="w-full max-w-[467px] max-h-[350px]"
+            />
           </div>
         </div>
         {/* brands-- */}

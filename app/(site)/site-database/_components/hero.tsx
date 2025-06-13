@@ -1,7 +1,6 @@
-import Link from "next/link";
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
 import PeachCircleSVG from "@/components/svg-defs/PeachCircleSVG";
+import CTABtn from "@/components/cta-btn";
 
 const SiteDbHeroSection = () => {
   return (
@@ -17,12 +16,7 @@ const SiteDbHeroSection = () => {
           Find, qualify, and organize link opportunities faster, smarter, and at
           scale.
         </p>
-        <Link
-          href={"#"}
-          className="flex items-center px-4 py-3 mt-6 space-x-2 text-sm font-medium transition-all duration-300 rounded-md cursor-pointer md:mt-12 font-display md:text-xl md:px-6 md:py-4 text-brand-5 hover:bg-background-hover bg-brand-100"
-        >
-          <span>Try free 14 days</span> <BsArrowRight />
-        </Link>
+        <CTABtn title="Try free 14 days" href="#" />
         <span className="mt-3 text-base font-display sm:mt-4 text-typography-50">
           No credit card required
         </span>

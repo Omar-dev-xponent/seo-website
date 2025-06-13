@@ -1,9 +1,8 @@
 "use client";
-import Link from "next/link";
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
 import AquaCircleSVG from "@/components/svg-defs/AquaCircleSVG";
 import VideoPlayer from "@/components/video-player";
+import CTABtn from "@/components/cta-btn";
 
 const HeroSection = () => {
   return (
@@ -22,18 +21,13 @@ const HeroSection = () => {
           outreach, and <br className="hidden md:block" /> real-time backlink
           monitoring in one platform
         </p>
-        <Link
-          href={"#"}
-          className="flex items-center px-4 py-3 mt-6 space-x-2 text-sm font-medium transition-all duration-300 rounded-md cursor-pointer md:mt-12 font-display md:text-xl md:px-6 md:py-4 text-brand-5 hover:bg-background-hover bg-brand-100"
-        >
-          <span>Try free 14 days</span> <BsArrowRight />
-        </Link>
+        <CTABtn title="Try free 14 days" href="#" />
         <span className="mt-3 text-base font-display sm:mt-4 text-typography-50">
           No credit card required
         </span>
         <VideoPlayer
           thumbnailSrc="/home/hero.png"
-          videoSrc="https://www.youtube.com/embed/-RLgdfDdCMo?si=XBOS3ZpbMIHmaxw9&autoplay=1"
+          videoSrc="https://www.youtube.com/embed/-RLgdfDdCMo?si=XBOS3ZpbMIHmaxw9&autoplay=1&mute=1"
         />
       </div>
 
