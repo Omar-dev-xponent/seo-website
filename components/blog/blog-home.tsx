@@ -1,7 +1,6 @@
 // @ts-nocheck
 "use client";
 import React, { useState, useEffect } from "react";
-import Loading from "@/app/blog/loading";
 import BlogCategories from "./blog-categories";
 import PostGrid from "./post-grid";
 import Hero from "@/components/blog/blog-hero";
@@ -62,7 +61,6 @@ const BlogHome: React.FC<BlogHomeProps> = ({ posts, categories }) => {
                 return <BlogCard key={ind} post={post} />;
               })}
             </div>
-            {/* <BlogPagination /> */}
           </div>
         </div>
         <div ref={bottomRef}></div>
@@ -70,6 +68,7 @@ const BlogHome: React.FC<BlogHomeProps> = ({ posts, categories }) => {
           <BlueCircleSVG className="w-full h-full sm:max-w-[577px] sm:h-[741px]" />
         </div>
       </section>
+      {/* <BlogPagination /> */}
       {/* <div className="relative pt-16 pb-20 bg-theme-gray lg:pt-16">
         <div className="relative px-4 mx-auto max-w-7xl lg:px-12">
           <div className="mb-8 text-center">
@@ -77,9 +76,8 @@ const BlogHome: React.FC<BlogHomeProps> = ({ posts, categories }) => {
               Recent Posts
             </h2>
           </div>
-          <Suspense fallback={<Loading />}>
-            <PostGrid posts={posts} />
-          </Suspense>
+
+          <PostGrid posts={posts} />
         </div>
       </div>
       <div className="">
@@ -89,9 +87,8 @@ const BlogHome: React.FC<BlogHomeProps> = ({ posts, categories }) => {
               Browse Categories
             </h2>
           </div>
-          <Suspense fallback={<Loading />}>
-            <BlogCategories categories={categories} />
-          </Suspense>
+
+          <BlogCategories categories={categories} />
         </div>
       </div> */}
     </div>
