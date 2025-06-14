@@ -11,7 +11,7 @@ interface IPost {
 const BlogCard = ({ post }: { post: IPost }) => {
   return (
     <div className="border-[1px] w-full border-typography-10 rounded-xl p-4 flex flex-col">
-      <Link href={`/blog-prev/${post?.slug} `} className="block w-full h-54">
+      <Link href={`/blog/${post?.slug} `} className="block w-full h-54">
         <Image
           src={post?.featuredImage?.sourceUrl}
           alt={"blog-image"}
@@ -22,7 +22,7 @@ const BlogCard = ({ post }: { post: IPost }) => {
         />
       </Link>
       <Link
-        href={`/blog-prev/${post?.slug}`}
+        href={`/blog/${post?.slug}`}
         className="block mt-5 text-xl font-medium sm:text-2xl line-clamp-2"
       >
         {post.title}

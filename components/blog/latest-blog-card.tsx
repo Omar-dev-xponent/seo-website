@@ -18,7 +18,7 @@ const LatestBlogCard = ({ post }: { post: Post }) => {
         Quickly discover the best domains tailored to your keywords.
       </p>
       <Link
-        href={`/blog-prev/${post?.slug}`}
+        href={`/blog/${post?.slug}`}
         className="block w-full h-full overflow-hidden mt-7 sm:mt-12 rounded-2xl"
       >
         <Image
@@ -31,7 +31,7 @@ const LatestBlogCard = ({ post }: { post: Post }) => {
         />
       </Link>
       <Link
-        href={`/blog-prev/${post?.slug}`}
+        href={`/blog/${post?.slug}`}
         className="block mt-5 text-xl font-medium sm:text-2xl text-typography-100 font-display"
       >
         {post?.title}
