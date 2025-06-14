@@ -40,8 +40,8 @@ const BlogArchive: React.FC<BlogArchiveProps> = ({
     <div>
       <div>
         <CategoryHero title={category} />
-        <div className="relative bg-theme-gray pt-16 pb-20 lg:pt-16 lg:pb-16">
-          <div className="relative max-w-7xl mx-auto px-4 lg:px-12">
+        <div className="relative pt-16 pb-20 bg-theme-gray lg:pt-16 lg:pb-16">
+          <div className="relative px-4 mx-auto max-w-7xl lg:px-12">
             <Suspense fallback={<Loading />}>
               <PostGrid posts={posts} />
             </Suspense>
@@ -52,8 +52,8 @@ const BlogArchive: React.FC<BlogArchiveProps> = ({
         )}
       </div>
       <div>
-        <div className="max-w-7xl mx-auto px-4 lg:px-12 py-20">
-          <div className="text-center mb-8">
+        <div className="px-4 py-20 mx-auto max-w-7xl lg:px-12">
+          <div className="mb-8 text-center">
             <h2 className="text-2xl font-medium tracking-tight text-slate-900 sm:text-3xl">
               Browse Categories
             </h2>

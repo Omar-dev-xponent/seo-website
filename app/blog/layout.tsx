@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/header";
-import Footer from "@/components/footer-prev";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Blog - Outreachful",

@@ -1,18 +1,31 @@
 import { Input } from "@/components/ui/input";
 import { RiSearchLine } from "react-icons/ri";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-const BlogSideBar = () => {
-  const categories = [
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+interface ICategory {
+  id: string;
+  name: string;
+  slug: string;
+}
+
+interface BlogSideBarProps {
+  isSidebarFixed: boolean;
+  categories: {
+    categories: ICategory[];
+  };
+}
+
+const BlogSideBar = ({ isSidebarFixed, categories }: BlogSideBarProps) => {
+  const allCategories = [
     "View all",
-    "Link Building",
-    "Product",
-    "Backlinks",
-    "Customer Success",
-    "Leadership",
-    "Management",
+    ...categories?.categories.map((category: ICategory) => category.name),
   ];
   return (
-    <div className="w-full md:max-w-64">
+    <aside
+      className={`w-full h-max md:max-w-64 ${
+        isSidebarFixed ? "md:fixed md:shrink-0 md:top-20" : ""
+      } transition-all duration-300`}
+    >
       <form className="flex items-center mb-6 sm:mb-8 rounded-xl border-[1px] border-typography-10 px-3 py-2">
         <RiSearchLine className="text-xl text-typography-75" />
         <Input
@@ -25,15 +38,15 @@ const BlogSideBar = () => {
           Blog categories
         </p>
         <Tabs
-          defaultValue={categories[0]}
+          defaultValue={allCategories[0]}
           orientation="vertical"
-          className="w-full "
+          className="w-full max-h-[300px] md:max-h-[500px] scrollbar-thin scrollbar-thumb-rounded overflow-y-auto "
         >
           <TabsList className="flex flex-col w-full h-auto space-y-1 bg-transparent ">
-            {categories.map((category) => (
+            {allCategories.map((category) => (
               <TabsTrigger
                 key={category}
-                value={category}
+                value={category as string}
                 className="w-full text-sm sm:text-base self-start font-semibold data-[state=active]:text-brand-100 data-[state=active]:bg-transparent data-[state=active]:shadow-none px-3 py-2 rounded-none data-[state=active]:border-l-[2px] data-[state=active]:border-brand-100  text-typography-50 border-l-[2px] border-transparent font-display inline-flex items-start justify-start transition-all duration-300"
               >
                 {category}
@@ -42,7 +55,7 @@ const BlogSideBar = () => {
           </TabsList>
         </Tabs>
       </div>
-    </div>
+    </aside>
   );
 };
 

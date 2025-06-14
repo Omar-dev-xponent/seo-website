@@ -7,10 +7,10 @@ interface HeroProps {
 
 export default function Hero({ title, description }: HeroProps) {
   return (
-    <div className="bg-teal-50 py-10 lg:overflow-hidden">
+    <div className="py-10 bg-teal-50 lg:overflow-hidden">
       <div className="mx-auto max-w-7xl lg:px-12">
-        <div className="mx-auto pt-24 pb-24 px-4 text-center">
-          <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+        <div className="px-4 pt-24 pb-24 mx-auto text-center">
+          <h1 className="max-w-4xl mx-auto text-5xl font-medium tracking-tight font-display text-slate-900 sm:text-7xl">
             Outreachful{" "}
             <span className="relative whitespace-nowrap text-primary">
               <svg
@@ -25,7 +25,7 @@ export default function Hero({ title, description }: HeroProps) {
             </span>
           </h1>
           {description && (
-            <p className="text-base font-normal text-lightWhite mt-6 sm:text-xl lg:text-lg xl:text-xl max-w-xl mx-auto">
+            <p className="max-w-xl mx-auto mt-6 text-base font-normal text-lightWhite sm:text-xl lg:text-lg xl:text-xl">
               {description}
             </p>
           )}

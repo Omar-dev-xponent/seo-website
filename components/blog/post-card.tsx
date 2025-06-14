@@ -56,7 +56,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
   const authorAvatar = author?.node?.avatar ?? author?.avatar;
 
   return (
-    <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+    <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
       {featuredImage?.sourceUrl && (
         <div className="flex-shrink-0">
           <Image
@@ -70,15 +70,15 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
           />
         </div>
       )}
-      <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+      <div className="flex flex-col justify-between flex-1 p-6 bg-white">
         <div className="flex-1">
           {categories && (
-            <div className="text-base flex gap-4">
+            <div className="flex gap-4 text-base">
               <MetaCategories categories={categories} />
             </div>
           )}
           <Link href={`/blog/${slug}`} className="block mt-2">
-            <p className="text-xl font-bold text-slate-900 capitalize">
+            <p className="text-xl font-bold capitalize text-slate-900">
               {title}
             </p>
             {excerpt && (
@@ -91,14 +91,14 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
             )}
           </Link>
         </div>
-        <div className="mt-6 flex items-center">
+        <div className="flex items-center mt-6">
           <div className="flex-shrink-0">
             <Link href={authorPathByName(authorName)}>
               <span className="sr-only">{authorName}</span>
               {authorAvatar && <Avatar author={author} />}
             </Link>
           </div>
-          <div className="ml-3 flex flex-col">
+          <div className="flex flex-col ml-3">
             <p className="text-sm font-normal text-slate-900">
               By&nbsp;
               <span className="font-semibold">{authorName}</span>
