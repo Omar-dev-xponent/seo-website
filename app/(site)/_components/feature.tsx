@@ -14,7 +14,7 @@ const features = [
       "Discover contact information with our built-in finder",
       "Filter prospects by domain rating, traffic, and relevance",
     ],
-    image: "/home/feature01.png",
+    image: "/home/feature01.webp",
   },
   {
     title: "AI-Powered outreach",
@@ -26,7 +26,7 @@ const features = [
       "Track open rates, replies, and conversion metrics",
       "A/B test your email templates",
     ],
-    image: "/home/feature02.png",
+    image: "/home/feature02.webp",
   },
   {
     title: "Automated link monitoring",
@@ -38,7 +38,7 @@ const features = [
       "Track performance impact on your rankings",
       "Weekly link health reports",
     ],
-    image: "/home/feature03.png",
+    image: "/home/feature03.webp",
   },
   {
     title: "Private site list management",
@@ -50,7 +50,7 @@ const features = [
       "Track outreach history and success rates by site",
       "Custom site tagging and categorization",
     ],
-    image: "/home/feature04.png",
+    image: "/home/feature04.webp",
   },
   {
     title: "Powerful integrations",
@@ -62,7 +62,7 @@ const features = [
       "Send outreach emails via GSuite, Outlook, or custom SMTP",
       "mport and export data between your favorite tools",
     ],
-    image: "/home/feature05.png",
+    image: "/home/feature04.webp",
   },
 ];
 const FeaturesSection = () => {
@@ -90,7 +90,7 @@ const FeaturesSection = () => {
         <OverviewCard
           title="Client management"
           description={`Manage multiple clients and campaigns with ease \n using our intuitive dashboard.`}
-          image="/home/client-list.png"
+          image="/home/client-list.webp"
           bgImage="/overview-accent-bg.png"
         />
         <div className="py-8 space-y-6 md:py-24 sm:py-12 md:space-y-20">

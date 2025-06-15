@@ -14,7 +14,7 @@ const Feature = () => {
         "Attach key information to each link, such as the site owner's name, email address, and details of your dealings",
         "If the link belongs to a client, you can assign it to the relevant order and client for better organization",
       ],
-      image: "/link-monitoring/feature01.png",
+      image: "/home/feature03.webp",
     },
     {
       title: "Automated outreach and follow-ups",
@@ -25,7 +25,7 @@ const Feature = () => {
         "Set up automated email campaigns to ensure you stay on top of your link placements",
         "Track the status of your links and receive alerts when the job is done",
       ],
-      image: "/link-monitoring/feature02.png",
+      image: "/client-portal/hero.webp",
     },
     {
       title: "Link protection and performance safeguarding",
@@ -36,7 +36,7 @@ const Feature = () => {
         "Track any changes in link status and act immediately if anything goes wrong",
         "Minimize risks by keeping a close eye on all your active backlinks",
       ],
-      image: "/link-monitoring/feature03.png",
+      image: "/prospecting/feature03.webp",
     },
   ];
   return (
@@ -54,7 +54,7 @@ const Feature = () => {
         <OverviewCard
           title="Add sites to campaigns in one click"
           description={`Build your outreach list directly from the database. Just select, save,  \n and assign to any campaign or client project instantly.`}
-          image="/home/client-list.png"
+          image="/home/client-list.webp"
           bgImage="/overview-accent-bg.png"
         />
         <div className="py-8 space-y-6 md:py-24 sm:py-12 md:space-y-24">

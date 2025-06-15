@@ -26,7 +26,7 @@ const HeroSection = () => {
           No credit card required
         </span>
         <VideoPlayer
-          thumbnailSrc="/home/hero.png"
+          thumbnailSrc="/home/hero.webp"
           videoSrc="https://www.youtube.com/embed/-RLgdfDdCMo?si=XBOS3ZpbMIHmaxw9&autoplay=1&mute=1"
         />
       </div>

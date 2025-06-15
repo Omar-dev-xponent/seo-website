@@ -15,7 +15,7 @@ const ClientPortalFeature = () => {
         "Submit domains for approval before outreach",
         "Track approval status and feedback in real-time",
       ],
-      image: "/client-portal/feature01.png",
+      image: "/client-portal/hero.webp",
     },
     {
       title: "Built-in messaging & instant notifications",
@@ -26,7 +26,7 @@ const ClientPortalFeature = () => {
         "Instant notifications on approvals, updates & live links",
         "Optional email alerts or Slack-style integration",
       ],
-      image: "/client-portal/feature02.png",
+      image: "/client-portal/hero.webp",
     },
     {
       title: "Built for agencies & freelancers",
@@ -37,7 +37,7 @@ const ClientPortalFeature = () => {
         "AManage multiple orders & timelines easily",
         "Maintain visibility across all client work",
       ],
-      image: "/client-portal/feature02.png",
+      image: "/client-portal/hero.webp",
     },
   ];
   return (
@@ -55,7 +55,7 @@ const ClientPortalFeature = () => {
         <OverviewCard
           title="Live link monitoring & reporting"
           description={`Automated reports with link status and domain metrics—clear, \n visual updates your clients will love.`}
-          image="/home/client-list.png"
+          image="/home/client-list.webp"
           bgImage="/overview-accent-bg.png"
         />
         <div className="py-8 space-y-6 md:py-24 sm:py-12 md:space-y-24">

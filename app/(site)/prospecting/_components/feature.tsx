@@ -9,7 +9,7 @@ const ProspectingFeature = () => {
       title: "Keyword or Inventory-Based search",
       subtitle:
         "Start your prospecting by entering niche-specific keywords or exploring our extensive inventory. Behind the scenes, our system pulls in vetted websites and displays SEO-rich data for each.",
-      image: "/prospecting/feature01.png",
+      image: "/prospecting/feature01.webp",
     },
     {
       title: "Built-in SEO metrics",
@@ -20,7 +20,7 @@ const ProspectingFeature = () => {
         "Backlink profiles",
         "Spam signals",
       ],
-      image: "/prospecting/feature02.png",
+      image: "/site-database/feature03.webp",
     },
     {
       title: "Smart filtering & bulk actions",
@@ -30,7 +30,7 @@ const ProspectingFeature = () => {
         "Remove or bulk delete poor fits",
         "Quickly shortlist high-potential sites",
       ],
-      image: "/prospecting/feature03.png",
+      image: "/prospecting/feature03.webp",
     },
     {
       title: "Save, Organize, & Reuse Prospect Lists",
@@ -40,7 +40,7 @@ const ProspectingFeature = () => {
         "Add it to your campaigns",
         "Or store it in your private site inventory for later reuse",
       ],
-      image: "/prospecting/feature04.png",
+      image: "/site-database/feature03.webp",
     },
   ];
   return (
@@ -58,7 +58,7 @@ const ProspectingFeature = () => {
         <OverviewCard
           title="Contact information at your fingertips"
           description={`Instant contact details from our database—with optional enrichment via  \n Hunter, Dropcontact, Apollo, and more`}
-          image="/home/client-list.png"
+          image="/home/client-list.webp"
           bgImage="/overview-accent-bg.png"
         />
         <div className="py-8 space-y-6 md:py-24 sm:py-12 md:space-y-24">

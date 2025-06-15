@@ -15,13 +15,13 @@ const FilteringAndShortlistingFeature = () => {
         "Backlink profiles",
         "Index status",
       ],
-      image: "/shortlisting-and-filtering/feature01.png",
+      image: "/home/feature03.webp",
     },
     {
       title: "Vetted site inventory",
       subtitle:
         "Filter by sites already in our vetted inventory or your own private site inventory, ensuring you’re only considering quality, reliable domains. This saves you time from vetting new sites on your own.",
-      image: "/shortlisting-and-filtering/feature02.png",
+      image: "/site-database/feature02.webp",
     },
     {
       title: "View full site details without leaving the app",
@@ -30,7 +30,7 @@ const FilteringAndShortlistingFeature = () => {
         "View detailed site profiles — including SEO metrics, contact data, and outreach details — all within our app.",
         "Quickly review the full scope of a site’s relevance to your campaign without losing your workflow.",
       ],
-      image: "/shortlisting-and-filtering/feature03.png",
+      image: "/home/feature03.webp",
     },
     {
       title: "Simplified campaign preparation",
@@ -41,7 +41,7 @@ const FilteringAndShortlistingFeature = () => {
         "Your own site inventory",
         "Or export them for further review or outreach",
       ],
-      image: "/shortlisting-and-filtering/feature04.png",
+      image: "/site-database/feature03.webp",
     },
   ];
   return (
@@ -59,7 +59,7 @@ const FilteringAndShortlistingFeature = () => {
         <OverviewCard
           title="One-click site management"
           description={`Build your outreach list directly from the database. Just select, \n save, and assign to any campaign or client project instantly.`}
-          image="/home/client-list.png"
+          image="/home/client-list.webp"
           bgImage="/overview-accent-bg.png"
         />
         <div className="py-8 space-y-6 md:py-24 sm:py-12 md:space-y-24">
