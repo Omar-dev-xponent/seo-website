@@ -50,7 +50,7 @@ const BlogHome: React.FC<BlogHomeProps> = ({ posts, categories }) => {
         {posts.length > 0 && <LatestBlogCard post={posts[0]} />}
         <div
           ref={topRef}
-          className="flex flex-col w-full pt-8 pb-5 space-y-4 sm:pb-8 sm:pt-12 md:space-y-0 md:space-x-16 md:flex-row h-max app-container"
+          className="flex flex-col w-full pt-8 space-y-4 sm:pt-12 md:space-y-0 md:space-x-16 md:flex-row h-max app-container"
         >
           <BlogSideBar
             categories={categories}
