@@ -42,12 +42,9 @@ const BlogCard = ({ post }: { post: IPost }) => {
           className="object-cover rounded-full"
         />
         <div className="flex flex-col">
-          <Link
-            href={authorPathByName(post?.author?.name)}
-            className="block text-base font-medium font-display text-typography-100"
-          >
+          <p className="block text-base font-medium font-display text-typography-100">
             {post?.author?.name}
-          </Link>
+          </p>
           <Date dateString={post?.date} />
         </div>
       </div>
