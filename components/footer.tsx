@@ -13,9 +13,9 @@ const Footer = () => {
     { label: "Youtube", icon: TbBrandYoutubeFilled, path: "/" },
   ];
   const legalLinks = [
-    { label: "Terms .", path: "/" },
-    { label: "Privacy .", path: "/" },
-    { label: "Cookie Policy", path: "/" },
+    { label: "Contact .", path: "/contact" },
+    { label: "Privacy .", path: "/privacy-policy" },
+    { label: "About", path: "/about" },
   ];
   const productLinks = [
     { label: "Site Database", path: "/site-databae" },

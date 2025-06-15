@@ -5,63 +5,47 @@ import AquaCircleSVG from "@/components/svg-defs/AquaCircleSVG";
 const Hero = () => {
   const planDetails = [
     {
-      title: "Free plan",
-      subtitle: "Perfect feet hobby project",
-      price: "$0",
+      title: "Starter",
+      subtitle: "Perfect for small teams and startups",
+      price: "$29",
       badge: "",
-      frequency: "",
-      featureTagLine: "Everything in our free plan plus....",
+      frequency: "/month",
+      featureTagLine: "",
       features: [
-        "Access to basic features",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
+        "Up to 5 team members",
+        "Basic analytics",
+        "5 automation workflows",
+        "Email support",
       ],
     },
     {
-      title: "Pro plan",
-      subtitle: "Perfect feet hobby project",
-      price: "$0",
+      title: "Professional",
+      subtitle: "Ideal for growing businesses",
+      price: "$79",
       frequency: "monthly",
-      badge: "",
-      featureTagLine: "Everything in our free plan plus....",
+      badge: "Popular",
+      featureTagLine: "",
       features: [
-        "Access to basic features",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
+        "Up to 20 team members",
+        "Advanced analytics",
+        "Unlimited automation workflows",
+        "Priority support",
+        "API access",
       ],
     },
     {
-      title: "Business Plan",
-      subtitle: "Perfect feet hobby project",
-      price: "$0",
-      frequency: "yearly",
+      title: "Enterprise",
+      subtitle: "For large organizations",
+      price: "$199",
+      frequency: "/month",
       badge: "",
-      featureTagLine: "Everything in our free plan plus....",
+      featureTagLine: "",
       features: [
-        "Access to basic features",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-      ],
-    },
-    {
-      title: "Agency Plan",
-      subtitle: "Perfect feet hobby project",
-      price: "$0",
-      frequency: "yearly",
-      badge: "",
-      featureTagLine: "Everything in our free plan plus....",
-      features: [
-        "Access to basic features",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
+        "Unlimited team members",
+        "Custom analytics",
+        "Advanced security features",
+        "Dedicated account manage",
+        "Custom integrations",
       ],
     },
   ];
@@ -97,7 +81,7 @@ const Hero = () => {
           </TabsList>
           <TabsContent
             value="monthly"
-            className="grid w-full grid-cols-1 mt-0 lg:grid-cols-4 sm:grid-cols-2 gap-7"
+            className="grid w-full grid-cols-1 mx-auto mt-0 lg:grid-cols-3 sm:grid-cols-2 gap-7"
           >
             {planDetails.map((plan, ind) => {
               return <PricingCard key={ind} planDetails={plan} />;
@@ -105,7 +89,7 @@ const Hero = () => {
           </TabsContent>
           <TabsContent
             value="annual"
-            className="grid w-full grid-cols-1 mt-0 lg:grid-cols-4 sm:grid-cols-2 gap-7"
+            className="grid w-full grid-cols-1 mt-0 lg:grid-cols-3 sm:grid-cols-2 gap-7"
           >
             {planDetails.map((plan, ind) => {
               return <PricingCard key={ind} planDetails={plan} />;
