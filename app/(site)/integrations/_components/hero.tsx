@@ -25,7 +25,7 @@ const Hero = () => {
               See how teams and clients are transforming their{" "}
               <br className="hidden lg:block" /> outreach with our platform.
             </p>
-            <CTABtn title="Try free 14 days" href="#" />
+            <CTABtn title="Try free 14 days" href="/pricing" />
             <p className="mt-4 text-base font-display text-typography-50">
               No credit card required
             </p>

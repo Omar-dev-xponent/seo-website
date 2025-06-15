@@ -15,7 +15,7 @@ const TrialCTA = ({ title, description }: TrialCTAProps) => {
         <p className="mt-4 text-sm text-center sm:whitespace-pre-line sm:text-base font-display sm:mt-7 text-typography-10">
           {description}
         </p>
-        <CTABtn title="Try free 14 days" href="#" />
+        <CTABtn title="Try free 14 days" href="/pricing" />
         <div className="w-full h-5 max-w-16 sm:max-w-28 sm:h-9 absolute bottom-8 sm:bottom-12 transform translate-x-[190%]">
           <Image
             src="/icons/curve-arrow.svg"

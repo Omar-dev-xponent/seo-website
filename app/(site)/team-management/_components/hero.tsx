@@ -27,7 +27,7 @@ const Hero = () => {
               <br className="hidden lg:block" /> clients from one unified,
               shared workspace.
             </p>
-            <CTABtn title="Try free 14 days" href="#" />
+            <CTABtn title="Try free 14 days" href="/pricing" />
             <p className="mt-4 text-base font-display text-typography-50">
               No credit card required
             </p>

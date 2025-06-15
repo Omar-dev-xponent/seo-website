@@ -13,7 +13,7 @@ const HeroSection = () => {
           Find, qualify, and organize link opportunities faster, smarter, and at
           scale.
         </p>
-        <CTABtn title="Try free 14 days" href="#" />
+        <CTABtn title="Try free 14 days" href="/pricing" />
         <span className="mt-3 text-base font-display sm:mt-4 text-typography-50">
           No credit card required
         </span>

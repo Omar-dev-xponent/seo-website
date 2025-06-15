@@ -1,9 +1,6 @@
 import CTABtn from "@/components/cta-btn";
 import VideoPlayer from "@/components/video-player";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { BsArrowRight } from "react-icons/bs";
 
 const ProspectingHero = () => {
   const brands = [
@@ -31,7 +28,7 @@ const ProspectingHero = () => {
               See how teams and clients are transforming their{" "}
               <br className="hidden lg:block" /> outreach with our platform.
             </p>
-            <CTABtn title="Try free 14 days" href="#" />
+            <CTABtn title="Try free 14 days" href="/pricing" />
 
             <p className="mt-4 text-base font-display text-typography-50">
               No credit card required

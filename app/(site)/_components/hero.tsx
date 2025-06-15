@@ -21,7 +21,7 @@ const HeroSection = () => {
           outreach, and <br className="hidden md:block" /> real-time backlink
           monitoring in one platform
         </p>
-        <CTABtn title="Try free 14 days" href="#" />
+        <CTABtn title="Try free 14 days" href="/pricing" />
         <span className="mt-3 text-base font-display sm:mt-4 text-typography-50">
           No credit card required
         </span>
