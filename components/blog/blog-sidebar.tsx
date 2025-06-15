@@ -1,7 +1,9 @@
+"use client";
 import { Input } from "@/components/ui/input";
 import { RiSearchLine } from "react-icons/ri";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface ICategory {
   id: string;
@@ -17,6 +19,9 @@ interface BlogSideBarProps {
 }
 
 const BlogSideBar = ({ isSidebarFixed, categories }: BlogSideBarProps) => {
+  const path = usePathname();
+  const categorySlug = path.split("/")[3];
+
   return (
     <aside
       className={`w-full h-max md:max-w-64 ${
@@ -36,25 +41,31 @@ const BlogSideBar = ({ isSidebarFixed, categories }: BlogSideBarProps) => {
         <p className="mb-4 text-base font-semibold sm:text-lg sm:mb-5 font-display text-brand-100">
           Blog categories
         </p>
-        <Tabs
-          defaultValue={categories?.categories[0]?.name}
-          orientation="vertical"
-          className="w-full max-h-[300px] md:max-h-[500px] scrollbar-thin scrollbar-thumb-rounded overflow-y-auto "
-        >
-          <TabsList className="flex flex-col w-full h-auto space-y-1 bg-transparent ">
-            {categories?.categories.map((category: ICategory, ind) => (
-              <TabsTrigger
-                key={ind}
-                value={category?.name}
-                className="w-full text-sm sm:text-base self-start font-semibold data-[state=active]:text-brand-100 data-[state=active]:bg-transparent data-[state=active]:shadow-none px-3 py-2 rounded-none data-[state=active]:border-l-[2px] data-[state=active]:border-brand-100  text-typography-50 border-l-[2px] border-transparent font-display inline-flex items-start justify-start transition-all duration-300"
-              >
-                <Link href={`/blog/categories/${category?.slug}`}>
-                  {category?.name}
-                </Link>
-              </TabsTrigger>
-            ))}
-          </TabsList>
-        </Tabs>
+        {categories?.categories.length > 0 ? (
+          <Tabs
+            defaultValue={categorySlug}
+            orientation="vertical"
+            className="w-full max-h-[300px] md:max-h-[500px] scrollbar-thin scrollbar-thumb-rounded overflow-y-auto "
+          >
+            <TabsList className="flex flex-col w-full h-auto space-y-1 bg-transparent ">
+              {categories?.categories.map((category: ICategory, ind) => (
+                <TabsTrigger
+                  key={ind}
+                  value={category?.slug}
+                  className="w-full text-sm sm:text-base self-start font-semibold data-[state=active]:text-brand-100 data-[state=active]:bg-transparent data-[state=active]:shadow-none px-3 py-2 rounded-none data-[state=active]:border-l-[2px] data-[state=active]:border-brand-100  text-typography-50 border-l-[2px] border-transparent font-display inline-flex items-start justify-start transition-all duration-300"
+                >
+                  <Link href={`/blog/categories/${category?.slug}`}>
+                    {category?.name}
+                  </Link>
+                </TabsTrigger>
+              ))}
+            </TabsList>
+          </Tabs>
+        ) : (
+          <p className="text-sm font-display text-typography-50">
+            No categories found
+          </p>
+        )}
       </div>
     </aside>
   );
