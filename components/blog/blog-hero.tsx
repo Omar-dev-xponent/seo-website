@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="flex items-center justify-center w-full md:justify-end md:w-[40%]">
             <div className="w-full max-w-[467px] max-h-[350px] relative">
               <Image
-                src={"/blog/hero.png"}
+                src={"/blog-hero.png"}
                 alt="Client Portal Hero"
                 width={467}
                 height={350}
