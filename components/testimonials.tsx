@@ -12,7 +12,7 @@ const TestimonialCard = () => {
       <div className="flex  space-x-3 border-t-[1px] border-typography-10 pt-4">
         <div>
           <Image
-            src={"/customer01.webp"}
+            src={"/avatar.png"}
             alt="avatar"
             width={48}
             height={48}

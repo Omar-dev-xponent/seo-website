@@ -1,4 +1,3 @@
-import React from "react";
 import FeatureCard from "@/components/feature-card";
 import OverviewCard from "@/components/overview-card";
 import AquaCircleSVG from "@/components/svg-defs/AquaCircleSVG";
