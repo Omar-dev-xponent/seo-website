@@ -101,7 +101,7 @@ const Hero = () => {
         <h1 className="sm:text-4xl md:text-6xl text-3xl font-semibold leading-10 sm:leading-[48px] sm:font-bold text-center md:leading-[80px] font-display text-typography-100">
           Clear, <span className="text-brand-100">simple pricing </span> built
           for <br className="hidden lg:block" />
-          serious link builderss
+          serious link builders
         </h1>
         <p className="mt-5 text-base leading-[1.5] md:leading-8 text-center sm:text-lg md:text-xl sm:mt-7 md:mt-10 font-display text-typography-75">
           Pick a plan that fits your workflow—no hidden fees, no surprises

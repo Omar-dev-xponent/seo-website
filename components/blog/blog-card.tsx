@@ -1,25 +1,43 @@
+"use client";
 import { authorPathByName } from "@/lib/wpQueries/users";
 import Image from "next/image";
 import Link from "next/link";
 import parse from "html-react-parser";
 import Date from "@/components/blog/date";
+import { Skeleton } from "@/components/ui/skeleton";
+import { useState } from "react";
 
 interface IPost {
   [key: string]: any;
 }
 
 const BlogCard = ({ post }: { post: IPost }) => {
+  const [imageLoading, setImageLoading] = useState<boolean>(false);
+  const [imgSrc, setImgSrc] = useState<string>(
+    post?.featuredImage?.sourceUrl || "/default-image.png"
+  );
+
+  const imageErrorHandler = () => setImgSrc("/default-image.png");
+
   return (
     <div className="border-[1px] w-full border-typography-10 rounded-xl p-4 flex flex-col">
-      <Link href={`/blog/${post?.slug} `} className="block w-full h-54">
+      <Link
+        href={`/blog/${post?.slug} `}
+        className="relative block w-full h-56"
+      >
         <Image
-          src={post?.featuredImage?.sourceUrl}
+          src={imgSrc}
           alt={"blog-image"}
           width={0}
           height={0}
           sizes="100vw"
-          className="block object-cover w-full h-full rounded-xl"
+          className={`block object-cover transition-all duration-300 w-full h-full rounded-xl ${imageLoading ? "opacity-100" : "opacity-0"}`}
+          onLoad={() => setImageLoading(true)}
+          onError={imageErrorHandler}
         />
+        {!imageLoading && (
+          <Skeleton className="absolute inset-0 w-full h-full rounded-xl" />
+        )}
       </Link>
       <Link
         href={`/blog/${post?.slug}`}

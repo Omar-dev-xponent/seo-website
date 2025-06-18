@@ -1,6 +1,10 @@
+"use client";
 import Image from "next/image";
 import { sanitizeExcerpt } from "@/lib/wpQueries/posts";
 import Link from "next/link";
+import { useState } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
+
 interface Post {
   [key: string]: any;
 }
@@ -9,6 +13,13 @@ interface ICategory {
   slug: string;
 }
 const LatestBlogCard = ({ post }: { post: Post }) => {
+  const [imageLoading, setImageLoading] = useState<boolean>(false);
+  const [imgSrc, setImgSrc] = useState<string>(
+    post?.featuredImage?.sourceUrl || "/default-image.png"
+  );
+
+  const imageErrorHandler = () => setImgSrc("/default-image.png");
+
   return (
     <div className="app-container">
       <h3 className="mb-4 text-2xl font-semibold text-center sm:mb-6 sm:text-4xl font-display text-typography-100">
@@ -19,16 +30,21 @@ const LatestBlogCard = ({ post }: { post: Post }) => {
       </p>
       <Link
         href={`/blog/${post?.slug}`}
-        className="block w-full h-full overflow-hidden mt-7 sm:mt-12 rounded-2xl"
+        className="relative block w-full h-full overflow-hidden mt-7 sm:mt-12 rounded-2xl"
       >
         <Image
-          src={post?.featuredImage?.sourceUrl}
+          src={imgSrc}
           alt="blog-image"
           width={0}
           height={0}
           sizes="100vw"
-          className="object-cover w-full h-full rounded-2xl"
+          className={`object-cover w-full h-full rounded-2xl ${imageLoading ? "opacity-100" : "opacity-0"}`}
+          onLoad={() => setImageLoading(true)}
+          onError={imageErrorHandler}
         />
+        {!imageLoading && (
+          <Skeleton className="absolute inset-0 w-full h-full rounded-xl" />
+        )}
       </Link>
       <Link
         href={`/blog/${post?.slug}`}
