@@ -1,16 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
+import { FaLinkedin } from "react-icons/fa6";
 import { RiTwitterXFill } from "react-icons/ri";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import DiamondCircleSVG from "@/components/svg-defs/AquaCircleSVG";
 const Footer = () => {
   const socialLinks = [
-    { label: "Facebook", icon: FaFacebook, path: "/" },
-    { label: "Instagram", icon: RiInstagramFill, path: "/" },
-    { label: "Twitter", icon: RiTwitterXFill, path: "/" },
-    { label: "Youtube", icon: TbBrandYoutubeFilled, path: "/" },
+    {
+      label: "Facebook",
+      icon: FaFacebook,
+      path: "https://www.facebook.com/uprankly",
+    },
+    {
+      label: "Instagram",
+      icon: FaLinkedin,
+      path: "https://www.linkedin.com/company/uprankly",
+    },
+    { label: "Twitter", icon: RiTwitterXFill, path: "https://x.com/Uprankly" },
+    {
+      label: "Youtube",
+      icon: TbBrandYoutubeFilled,
+      path: "https://www.youtube.com/@Uprankly",
+    },
   ];
   const legalLinks = [{ label: "Privacy and Policy", path: "/privacy-policy" }];
   const productLinks = [
