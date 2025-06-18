@@ -64,16 +64,18 @@ const BlogHome: React.FC<BlogHomeProps> = ({ posts, categories }) => {
                 })}
               </div>
             ) : (
-              <div className="flex flex-col items-center justify-center gap-y-2">
-                <Image
-                  src={"/not-found.png"}
-                  alt="not-found"
-                  width={400}
-                  height={400}
-                />
-                <p className="text-lg font-display text-typography-50">
-                  Blog not found
-                </p>
+              <div className="p-10 border-[2px] border-dashed border-typography-10 rounded-xl">
+                <div className="flex flex-col items-center justify-center gap-y-2">
+                  <Image
+                    src={"/not-found.png"}
+                    alt="not-found"
+                    width={400}
+                    height={400}
+                  />
+                  <p className="text-lg font-display text-typography-50">
+                    Blog not found
+                  </p>
+                </div>
               </div>
             )}
           </div>
