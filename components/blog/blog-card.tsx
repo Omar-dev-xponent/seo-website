@@ -10,7 +10,10 @@ import { useState } from "react";
 interface IPost {
   [key: string]: any;
 }
-
+interface ICategory {
+  name: string;
+  slug: string;
+}
 const BlogCard = ({ post }: { post: IPost }) => {
   const [imageLoading, setImageLoading] = useState<boolean>(false);
   const [imgSrc, setImgSrc] = useState<string>(
@@ -39,9 +42,21 @@ const BlogCard = ({ post }: { post: IPost }) => {
           <Skeleton className="absolute inset-0 w-full h-full rounded-xl" />
         )}
       </Link>
+      <div className="flex flex-wrap items-center gap-2">
+        {post?.categories.map((category: ICategory, ind: number) => {
+          return (
+            <p
+              key={ind}
+              className="px-2 mt-4 py-1 text-xs font-display rounded-2xl bg-brand-10 text-brand-100 border-[1px] border-brand-100"
+            >
+              {category?.name}
+            </p>
+          );
+        })}
+      </div>
       <Link
         href={`/blog/${post?.slug}`}
-        className="block mt-5 text-xl font-medium sm:text-2xl line-clamp-2"
+        className="block mt-3 text-xl font-medium sm:text-2xl line-clamp-2"
       >
         {post.title}
       </Link>
