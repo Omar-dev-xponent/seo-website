@@ -57,45 +57,40 @@ const BlogArchive: React.FC<BlogArchiveProps> = ({
   }, [topInView, bottomInView]);
   return (
     <div>
-      <div>
-        <CategoryHero title={category} />
-        <div
-          ref={topRef}
-          className="flex flex-col w-full pt-8 pb-5 space-y-4 sm:pb-8 sm:pt-12 md:space-y-0 md:space-x-16 md:flex-row h-max app-container"
-        >
-          <BlogSideBar
-            categories={categories}
-            isSidebarFixed={isSidebarFixed}
-          />
-          <div className={`flex-1 ${isSidebarFixed ? "md:pl-64" : "md:pl-0"}`}>
-            {posts.length > 0 ? (
-              <div className="grid w-full grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-                {posts.map((post, ind) => {
-                  return <BlogCard key={ind} post={post} />;
-                })}
+      <CategoryHero title={category} />
+      <div
+        ref={topRef}
+        className="flex flex-col w-full pt-8 pb-5 space-y-4 sm:pb-8 sm:pt-12 md:space-y-0 md:space-x-16 md:flex-row h-max app-container"
+      >
+        <BlogSideBar categories={categories} isSidebarFixed={isSidebarFixed} />
+        <div className={`flex-1 ${isSidebarFixed ? "md:pl-64" : "md:pl-0"}`}>
+          {posts.length > 0 ? (
+            <div className="grid w-full grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+              {posts.map((post, ind) => {
+                return <BlogCard key={ind} post={post} />;
+              })}
+            </div>
+          ) : (
+            <div className="p-10 border-[2px] border-dashed border-typography-10 rounded-xl">
+              <div className="flex flex-col items-center justify-center gap-y-2">
+                <Image
+                  src={"/not-found.png"}
+                  alt="not-found"
+                  width={400}
+                  height={400}
+                />
+                <p className="text-lg font-display text-typography-50">
+                  Blog not found
+                </p>
               </div>
-            ) : (
-              <div className="p-10 border-[2px] border-dashed border-typography-10 rounded-xl">
-                <div className="flex flex-col items-center justify-center gap-y-2">
-                  <Image
-                    src={"/not-found.png"}
-                    alt="not-found"
-                    width={400}
-                    height={400}
-                  />
-                  <p className="text-lg font-display text-typography-50">
-                    Blog not found
-                  </p>
-                </div>
-              </div>
-            )}
-            {pagesCount > 1 && (
-              <Pagination basePath={basePath} pagesCount={pagesCount} />
-            )}
-          </div>
+            </div>
+          )}
+          {pagesCount > 1 && (
+            <Pagination basePath={basePath} pagesCount={pagesCount} />
+          )}
         </div>
-        <div ref={bottomRef}></div>
       </div>
+      <div ref={bottomRef}></div>
     </div>
   );
 };
