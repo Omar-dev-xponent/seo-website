@@ -15,9 +15,16 @@ const PricingCard = ({ planDetails }: { planDetails: IPlanDetails }) => {
   return (
     <div className="border-[1px] transition-all group overflow-hidden duration-300 hover:border-brand-100 bg-white border-typography-25 rounded-xl">
       <div className="p-4 transition-all duration-300 group-hover:bg-brand-100">
-        <span className="text-sm sm:text-base group-hover:text-white text-typography-75 font-display">
-          {planDetails.title}
-        </span>
+        <div className="flex items-center justify-between">
+          <span className="text-sm sm:text-base group-hover:text-white text-typography-75 font-display">
+            {planDetails.title}
+          </span>
+          {planDetails.badge && (
+            <span className="px-2 py-1 text-sm text-white rounded-full bg-brand-100 font-display group-hover:text-brand-100 group-hover:bg-white">
+              {planDetails.badge}
+            </span>
+          )}{" "}
+        </div>
         <p className="my-3 space-x-1 text-4xl font-semibold sm:text-4xl sm:my-4 group-hover:text-white text-typography-100 font-display">
           {planDetails.price}{" "}
           <span className="text-sm font-normal group-hover:text-white text-typography-75">

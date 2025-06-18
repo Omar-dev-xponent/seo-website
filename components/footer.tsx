@@ -12,13 +12,9 @@ const Footer = () => {
     { label: "Twitter", icon: RiTwitterXFill, path: "/" },
     { label: "Youtube", icon: TbBrandYoutubeFilled, path: "/" },
   ];
-  const legalLinks = [
-    { label: "Contact .", path: "/contact" },
-    { label: "Privacy .", path: "/privacy-policy" },
-    { label: "About", path: "/about" },
-  ];
+  const legalLinks = [{ label: "Privacy and Policy", path: "/privacy-policy" }];
   const productLinks = [
-    { label: "Site Database", path: "/site-databae" },
+    { label: "Site Database", path: "/site-database" },
     { label: "Client Portal", path: "/client-portal" },
     { label: "Prospecting", path: "/prospecting" },
     { label: "Filtering & Shortlisting", path: "/filtering-and-shortlisting" },
@@ -30,6 +26,8 @@ const Footer = () => {
     { label: "Link Monitoring", path: "/link-monitoring" },
   ];
   const resourcesLinks = [
+    { label: "About", path: "/about" },
+    { label: "Contact", path: "/contact" },
     { label: "Testimonial", path: "/testimonials" },
     { label: "Pricing", path: "/pricing" },
     { label: "Blog", path: "/blog" },

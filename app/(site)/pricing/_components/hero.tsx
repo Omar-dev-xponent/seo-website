@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PricingCard from "@/app/(site)/pricing/_components/pricing-card";
 import AquaCircleSVG from "@/components/svg-defs/AquaCircleSVG";
 const Hero = () => {
-  const planDetails = [
+  const monthlyPlanDetails = [
     {
       title: "Starter",
       subtitle: "Perfect for small teams and startups",
@@ -22,7 +22,7 @@ const Hero = () => {
       title: "Professional",
       subtitle: "Ideal for growing businesses",
       price: "$79",
-      frequency: "monthly",
+      frequency: "/month",
       badge: "Popular",
       featureTagLine: "",
       features: [
@@ -38,6 +38,52 @@ const Hero = () => {
       subtitle: "For large organizations",
       price: "$199",
       frequency: "/month",
+      badge: "",
+      featureTagLine: "",
+      features: [
+        "Unlimited team members",
+        "Custom analytics",
+        "Advanced security features",
+        "Dedicated account manage",
+        "Custom integrations",
+      ],
+    },
+  ];
+  const yearlyPlanDetails = [
+    {
+      title: "Starter",
+      subtitle: "Perfect for small teams and startups",
+      price: "$348",
+      badge: "",
+      frequency: "/year",
+      featureTagLine: "",
+      features: [
+        "Up to 5 team members",
+        "Basic analytics",
+        "5 automation workflows",
+        "Email support",
+      ],
+    },
+    {
+      title: "Professional",
+      subtitle: "Ideal for growing businesses",
+      price: "$936",
+      frequency: "/year",
+      badge: "Popular",
+      featureTagLine: "",
+      features: [
+        "Up to 20 team members",
+        "Advanced analytics",
+        "Unlimited automation workflows",
+        "Priority support",
+        "API access",
+      ],
+    },
+    {
+      title: "Enterprise",
+      subtitle: "For large organizations",
+      price: "$2,388",
+      frequency: "/year",
       badge: "",
       featureTagLine: "",
       features: [
@@ -83,7 +129,7 @@ const Hero = () => {
             value="monthly"
             className="grid w-full grid-cols-1 mx-auto mt-0 lg:grid-cols-3 sm:grid-cols-2 gap-7"
           >
-            {planDetails.map((plan, ind) => {
+            {monthlyPlanDetails.map((plan, ind) => {
               return <PricingCard key={ind} planDetails={plan} />;
             })}
           </TabsContent>
@@ -91,7 +137,7 @@ const Hero = () => {
             value="annual"
             className="grid w-full grid-cols-1 mt-0 lg:grid-cols-3 sm:grid-cols-2 gap-7"
           >
-            {planDetails.map((plan, ind) => {
+            {yearlyPlanDetails.map((plan, ind) => {
               return <PricingCard key={ind} planDetails={plan} />;
             })}
           </TabsContent>
