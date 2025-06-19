@@ -1,6 +1,5 @@
 // @ts-nocheck
 "use client";
-import Loading from "@/app/blog/loading";
 import React, { Suspense, useState, useEffect } from "react";
 import BlogCategories from "./blog-categories";
 import CategoryHero from "./catgory-hero";
