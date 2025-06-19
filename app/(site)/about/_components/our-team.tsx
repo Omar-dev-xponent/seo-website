@@ -5,11 +5,11 @@ import React from "react";
 
 export default function OurTeam() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+    <section className="w-full py-12 bg-white md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-teal-100 px-3 py-1 text-sm text-primary">
+            <div className="inline-block px-3 py-1 text-sm bg-teal-100 rounded-lg text-primary">
               Our Team
             </div>
             <h2 className="text-3xl font-medium tracking-tight text-slate-900 sm:text-4xl">
@@ -24,9 +24,9 @@ export default function OurTeam() {
         <div className="grid gap-8 mt-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Team Member 1 */}
           <div className="flex flex-col items-center space-y-4">
-            <div className="relative h-40 w-40 overflow-hidden rounded-full">
+            <div className="relative w-40 h-40 overflow-hidden rounded-full">
               <Image
-                src="/placeholder.svg?height=160&width=160"
+                src="/about/alex-chen.webp"
                 alt="Alex Chen"
                 fill
                 className="object-cover"
@@ -42,19 +42,19 @@ export default function OurTeam() {
             </div>
             <div className="flex space-x-3">
               <Link href="#" className="text-slate-400 hover:text-primary">
-                <Twitter className="h-5 w-5" />
+                <Twitter className="w-5 h-5" />
               </Link>
               <Link href="#" className="text-slate-400 hover:text-primary">
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="w-5 h-5" />
               </Link>
             </div>
           </div>
 
           {/* Team Member 2 */}
           <div className="flex flex-col items-center space-y-4">
-            <div className="relative h-40 w-40 overflow-hidden rounded-full">
+            <div className="relative w-40 h-40 overflow-hidden rounded-full">
               <Image
-                src="/placeholder.svg?height=160&width=160"
+                src="/about/sarah-johnson.webp"
                 alt="Sarah Johnson"
                 fill
                 className="object-cover"
@@ -72,19 +72,19 @@ export default function OurTeam() {
             </div>
             <div className="flex space-x-3">
               <Link href="#" className="text-slate-400 hover:text-primary">
-                <Twitter className="h-5 w-5" />
+                <Twitter className="w-5 h-5" />
               </Link>
               <Link href="#" className="text-slate-400 hover:text-primary">
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="w-5 h-5" />
               </Link>
             </div>
           </div>
 
           {/* Team Member 3 */}
           <div className="flex flex-col items-center space-y-4">
-            <div className="relative h-40 w-40 overflow-hidden rounded-full">
+            <div className="relative w-40 h-40 overflow-hidden rounded-full">
               <Image
-                src="/placeholder.svg?height=160&width=160"
+                src="/about/michaelr-rodriguez.webp"
                 alt="Michael Rodriguez"
                 fill
                 className="object-cover"
@@ -101,19 +101,19 @@ export default function OurTeam() {
             </div>
             <div className="flex space-x-3">
               <Link href="#" className="text-slate-400 hover:text-primary">
-                <Twitter className="h-5 w-5" />
+                <Twitter className="w-5 h-5" />
               </Link>
               <Link href="#" className="text-slate-400 hover:text-primary">
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="w-5 h-5" />
               </Link>
             </div>
           </div>
 
           {/* Team Member 4 */}
           <div className="flex flex-col items-center space-y-4">
-            <div className="relative h-40 w-40 overflow-hidden rounded-full">
+            <div className="relative w-40 h-40 overflow-hidden rounded-full">
               <Image
-                src="/placeholder.svg?height=160&width=160"
+                src="/about//emily-zhang.webp"
                 alt="Emily Zhang"
                 fill
                 className="object-cover"
@@ -131,10 +131,10 @@ export default function OurTeam() {
             </div>
             <div className="flex space-x-3">
               <Link href="#" className="text-slate-400 hover:text-primary">
-                <Twitter className="h-5 w-5" />
+                <Twitter className="w-5 h-5" />
               </Link>
               <Link href="#" className="text-slate-400 hover:text-primary">
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="w-5 h-5" />
               </Link>
             </div>
           </div>
