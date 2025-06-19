@@ -119,5 +119,6 @@ module.exports = {
     require("tailwindcss-animate"),
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/typography"),
+    require("tailwind-scrollbar"),
   ],
 };

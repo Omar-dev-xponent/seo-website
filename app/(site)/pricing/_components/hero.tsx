@@ -3,65 +3,95 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PricingCard from "@/app/(site)/pricing/_components/pricing-card";
 import AquaCircleSVG from "@/components/svg-defs/AquaCircleSVG";
 const Hero = () => {
-  const planDetails = [
+  const monthlyPlanDetails = [
     {
-      title: "Free plan",
-      subtitle: "Perfect feet hobby project",
-      price: "$0",
+      title: "Starter",
+      subtitle: "Perfect for small teams and startups",
+      price: "$29",
       badge: "",
-      frequency: "",
-      featureTagLine: "Everything in our free plan plus....",
+      frequency: "/month",
+      featureTagLine: "",
       features: [
-        "Access to basic features",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
+        "Up to 5 team members",
+        "Basic analytics",
+        "5 automation workflows",
+        "Email support",
       ],
     },
     {
-      title: "Pro plan",
-      subtitle: "Perfect feet hobby project",
-      price: "$0",
-      frequency: "monthly",
-      badge: "",
-      featureTagLine: "Everything in our free plan plus....",
+      title: "Professional",
+      subtitle: "Ideal for growing businesses",
+      price: "$79",
+      frequency: "/month",
+      badge: "Popular",
+      featureTagLine: "",
       features: [
-        "Access to basic features",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
+        "Up to 20 team members",
+        "Advanced analytics",
+        "Unlimited automation workflows",
+        "Priority support",
+        "API access",
       ],
     },
     {
-      title: "Business Plan",
-      subtitle: "Perfect feet hobby project",
-      price: "$0",
-      frequency: "yearly",
+      title: "Enterprise",
+      subtitle: "For large organizations",
+      price: "$199",
+      frequency: "/month",
       badge: "",
-      featureTagLine: "Everything in our free plan plus....",
+      featureTagLine: "",
       features: [
-        "Access to basic features",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
+        "Unlimited team members",
+        "Custom analytics",
+        "Advanced security features",
+        "Dedicated account manage",
+        "Custom integrations",
+      ],
+    },
+  ];
+  const yearlyPlanDetails = [
+    {
+      title: "Starter",
+      subtitle: "Perfect for small teams and startups",
+      price: "$348",
+      badge: "",
+      frequency: "/year",
+      featureTagLine: "",
+      features: [
+        "Up to 5 team members",
+        "Basic analytics",
+        "5 automation workflows",
+        "Email support",
       ],
     },
     {
-      title: "Agency Plan",
-      subtitle: "Perfect feet hobby project",
-      price: "$0",
-      frequency: "yearly",
-      badge: "",
-      featureTagLine: "Everything in our free plan plus....",
+      title: "Professional",
+      subtitle: "Ideal for growing businesses",
+      price: "$936",
+      frequency: "/year",
+      badge: "Popular",
+      featureTagLine: "",
       features: [
-        "Access to basic features",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
-        "Unlimited link monitoring",
+        "Up to 20 team members",
+        "Advanced analytics",
+        "Unlimited automation workflows",
+        "Priority support",
+        "API access",
+      ],
+    },
+    {
+      title: "Enterprise",
+      subtitle: "For large organizations",
+      price: "$2,388",
+      frequency: "/year",
+      badge: "",
+      featureTagLine: "",
+      features: [
+        "Unlimited team members",
+        "Custom analytics",
+        "Advanced security features",
+        "Dedicated account manage",
+        "Custom integrations",
       ],
     },
   ];
@@ -71,7 +101,7 @@ const Hero = () => {
         <h1 className="sm:text-4xl md:text-6xl text-3xl font-semibold leading-10 sm:leading-[48px] sm:font-bold text-center md:leading-[80px] font-display text-typography-100">
           Clear, <span className="text-brand-100">simple pricing </span> built
           for <br className="hidden lg:block" />
-          serious link builderss
+          serious link builders
         </h1>
         <p className="mt-5 text-base leading-[1.5] md:leading-8 text-center sm:text-lg md:text-xl sm:mt-7 md:mt-10 font-display text-typography-75">
           Pick a plan that fits your workflow—no hidden fees, no surprises
@@ -97,17 +127,17 @@ const Hero = () => {
           </TabsList>
           <TabsContent
             value="monthly"
-            className="grid w-full grid-cols-1 mt-0 lg:grid-cols-4 sm:grid-cols-2 gap-7"
+            className="grid w-full grid-cols-1 mx-auto mt-0 lg:grid-cols-3 sm:grid-cols-2 gap-7"
           >
-            {planDetails.map((plan, ind) => {
+            {monthlyPlanDetails.map((plan, ind) => {
               return <PricingCard key={ind} planDetails={plan} />;
             })}
           </TabsContent>
           <TabsContent
             value="annual"
-            className="grid w-full grid-cols-1 mt-0 lg:grid-cols-4 sm:grid-cols-2 gap-7"
+            className="grid w-full grid-cols-1 mt-0 lg:grid-cols-3 sm:grid-cols-2 gap-7"
           >
-            {planDetails.map((plan, ind) => {
+            {yearlyPlanDetails.map((plan, ind) => {
               return <PricingCard key={ind} planDetails={plan} />;
             })}
           </TabsContent>

@@ -14,7 +14,7 @@ const CampaignFeature = () => {
         "Define time ranges (e.g., 10AM–1PM)",
         "Maximize open rates with timing control.",
       ],
-      image: "/campaign/feature01.png",
+      image: "/client-portal/hero.webp",
     },
     {
       title: "Built-in pitch editor",
@@ -24,7 +24,7 @@ const CampaignFeature = () => {
         "Customize or write new copy from scratch",
         "Add personalization tokens like {{Name}}, {{Site}}, {{Topic}} Pair with AI-powered suggestions to sharpen your copy in seconds.",
       ],
-      image: "/campaign/feature02.png",
+      image: "/prospecting/feature03.webp",
     },
     {
       title: "Smart reply detection",
@@ -34,7 +34,7 @@ const CampaignFeature = () => {
         "Removed from follow-up queue",
         `Marked as "Replied" in reports saves your reputation and avoids awkward double emails.`,
       ],
-      image: "/campaign/feature03.png",
+      image: "/home/feature03.webp",
     },
     {
       title: "Performance tracking",
@@ -44,7 +44,7 @@ const CampaignFeature = () => {
         `Replies`,
         `Link clicks (coming soon) Export reports for internal use or client sharing.`,
       ],
-      image: "/campaign/feature04.png",
+      image: "/site-database/feature03.webp",
     },
   ];
   return (
@@ -62,7 +62,7 @@ const CampaignFeature = () => {
         <OverviewCard
           title="Automated follow-ups"
           description={`Set it and forget it. Add 1–5 follow-up emails per contact with:`}
-          image="/home/client-list.png"
+          image="/home/client-list.webp"
           bgImage="/overview-accent-bg.png"
         />
         <div className="py-8 space-y-6 md:py-24 sm:py-12 md:space-y-24">

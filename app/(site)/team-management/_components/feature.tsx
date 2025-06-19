@@ -9,25 +9,25 @@ const Feature = () => {
       title: "Add multiple team members",
       subtitle:
         "Based on your plan, invite and manage your team right inside the app — no need to share passwords or juggle logins.",
-      image: "/team-management/feature01.png",
+      image: "/team-management/feature01.webp",
     },
     {
       title: "Role-based access",
       subtitle:
         "Keep things secure with permission levels. Assign who can view, edit, create campaigns, or just monitor progress.",
-      image: "/team-management/feature02.png",
+      image: "/team-management/feature02.webp",
     },
     {
       title: "Collaborate without clutter",
       subtitle:
         "Everyone sees their own assigned tasks and can update progress in real-time.",
-      image: "/team-management/feature03.png",
+      image: "/team-management/feature01.webp",
     },
     {
       title: "Track team activity",
       subtitle:
         "Know who’s doing what track outreach, responses, campaign additions, and follow-ups per team member.",
-      image: "/team-management/feature04.png",
+      image: "/team-management/feature02.webp",
     },
   ];
   return (
@@ -45,7 +45,7 @@ const Feature = () => {
         <OverviewCard
           title="Automated follow-ups"
           description={`Set it and forget it. Add 1–5 follow-up emails per contact with:`}
-          image="/home/client-list.png"
+          image="/home/client-list.webp"
           bgImage="/overview-accent-bg.png"
         />
         <div className="py-8 space-y-6 md:py-24 sm:py-12 md:space-y-24">

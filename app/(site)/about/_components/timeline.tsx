@@ -6,7 +6,7 @@ export default function Timeline() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-teal-100 px-3 py-1 text-sm text-primary">
+            <div className="inline-block px-3 py-1 text-sm bg-teal-100 rounded-lg text-primary">
               Our Journey
             </div>
             <h2 className="text-3xl font-medium tracking-tight text-slate-900 sm:text-4xl">
@@ -17,11 +17,28 @@ export default function Timeline() {
             </p>
           </div>
         </div>
-        <div className="relative mt-12 ml-4 border-l-2 border-primary/30 pl-8 md:ml-12 md:pl-12">
+        <div className="relative pl-8 mt-12 ml-4 border-l-2 border-primary/30 md:ml-12 md:pl-12">
           {/* Timeline Item 1 */}
-          <div className="mb-12 relative">
+          <div className="relative mb-12">
             <div className="absolute -left-[48px] md:-left-[65px] top-0 h-8 w-8 rounded-full bg-teal-100 border-4 border-white flex items-center justify-center">
-              <div className="h-3 w-3 rounded-full bg-primary"></div>
+              <div className="w-3 h-3 rounded-full bg-primary"></div>
+            </div>
+            <div className="space-y-2">
+              <span className="text-sm font-medium text-primary">Today</span>
+              <h3 className="text-xl font-medium text-slate-900">
+                Global Expansion
+              </h3>
+              <p className="text-slate-700">
+                Now serving over 5,000 customers in 30+ countries, we continue
+                to innovate and improve the platform based on user feedback.
+              </p>
+            </div>
+          </div>
+
+          {/* Timeline Item 2 */}
+          <div className="relative mb-12">
+            <div className="absolute -left-[48px] md:-left-[65px] top-0 h-8 w-8 rounded-full bg-teal-100 border-4 border-white flex items-center justify-center">
+              <div className="w-3 h-3 rounded-full bg-primary"></div>
             </div>
             <div className="space-y-2">
               <span className="text-sm font-medium text-primary">2019</span>
@@ -36,10 +53,10 @@ export default function Timeline() {
             </div>
           </div>
 
-          {/* Timeline Item 2 */}
-          <div className="mb-12 relative">
+          {/* Timeline Item 3 */}
+          <div className="relative mb-12">
             <div className="absolute -left-[48px] md:-left-[65px] top-0 h-8 w-8 rounded-full bg-teal-100 border-4 border-white flex items-center justify-center">
-              <div className="h-3 w-3 rounded-full bg-primary"></div>
+              <div className="w-3 h-3 rounded-full bg-primary"></div>
             </div>
             <div className="space-y-2">
               <span className="text-sm font-medium text-primary">2020</span>
@@ -54,10 +71,10 @@ export default function Timeline() {
             </div>
           </div>
 
-          {/* Timeline Item 3 */}
-          <div className="mb-12 relative">
+          {/* Timeline Item 4 */}
+          <div className="relative mb-12">
             <div className="absolute -left-[48px] md:-left-[65px] top-0 h-8 w-8 rounded-full bg-teal-100 border-4 border-white flex items-center justify-center">
-              <div className="h-3 w-3 rounded-full bg-primary"></div>
+              <div className="w-3 h-3 rounded-full bg-primary"></div>
             </div>
             <div className="space-y-2">
               <span className="text-sm font-medium text-primary">2021</span>
@@ -72,10 +89,10 @@ export default function Timeline() {
             </div>
           </div>
 
-          {/* Timeline Item 4 */}
-          <div className="mb-12 relative">
+          {/* Timeline Item 5 */}
+          <div className="relative">
             <div className="absolute -left-[48px] md:-left-[65px] top-0 h-8 w-8 rounded-full bg-teal-100 border-4 border-white flex items-center justify-center">
-              <div className="h-3 w-3 rounded-full bg-primary"></div>
+              <div className="w-3 h-3 rounded-full bg-primary"></div>
             </div>
             <div className="space-y-2">
               <span className="text-sm font-medium text-primary">2022</span>
@@ -85,23 +102,6 @@ export default function Timeline() {
               <p className="text-slate-700">
                 Introduced AI-powered outreach templates and prospect analysis,
                 revolutionizing how our users approach link building.
-              </p>
-            </div>
-          </div>
-
-          {/* Timeline Item 5 */}
-          <div className="relative">
-            <div className="absolute -left-[48px] md:-left-[65px] top-0 h-8 w-8 rounded-full bg-teal-100 border-4 border-white flex items-center justify-center">
-              <div className="h-3 w-3 rounded-full bg-primary"></div>
-            </div>
-            <div className="space-y-2">
-              <span className="text-sm font-medium text-primary">Today</span>
-              <h3 className="text-xl font-medium text-slate-900">
-                Global Expansion
-              </h3>
-              <p className="text-slate-700">
-                Now serving over 5,000 customers in 30+ countries, we continue
-                to innovate and improve the platform based on user feedback.
               </p>
             </div>
           </div>

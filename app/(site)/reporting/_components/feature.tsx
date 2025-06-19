@@ -9,7 +9,7 @@ const Feature = () => {
       title: "Branded reports",
       subtitle:
         "Automatically add your agency logo, company name, and custom notes to every report no design tools needed.",
-      image: "/reporting/feature01.png",
+      image: "/client-portal/hero.webp",
     },
     {
       title: "Track metrics that matter",
@@ -20,19 +20,19 @@ const Feature = () => {
         "Response and outreach stats",
         "Link type, DR/DA, and niche",
       ],
-      image: "/reporting/feature02.png",
+      image: "/prospecting/feature03.webp",
     },
     {
       title: "Easy export options",
       subtitle:
         "One-click export to PDF or CSV perfect for sharing or archiving",
-      image: "/reporting/feature03.png",
+      image: "/home/feature03.webp",
     },
     {
       title: "Send directly to clients",
       subtitle:
         "Email reports to your clients straight from the app, with a personalized message.",
-      image: "/reporting/feature04.png",
+      image: "/site-database/feature03.webp",
     },
   ];
   return (
@@ -50,7 +50,7 @@ const Feature = () => {
         <OverviewCard
           title="Add sites to campaigns in one click"
           description={`Build your outreach list directly from the database. Just select, save,  \n and assign to any campaign or client project instantly.`}
-          image="/home/client-list.png"
+          image="/home/client-list.webp"
           bgImage="/overview-accent-bg.png"
         />
         <div className="py-8 space-y-6 md:py-24 sm:py-12 md:space-y-24">
@@ -66,7 +66,7 @@ const Feature = () => {
           <OverviewCard
             title="Smart Summaries"
             description={`Get a clear snapshot of your month’s performance across all  \n campaigns and clients.`}
-            image="/home/client-list.png"
+            image="/home/client-list.webp"
             bgImage="/overview-light-teal-bg.png"
           />
         </div>

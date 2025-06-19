@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import Link from "next/link";
 import React from "react";
 
@@ -18,12 +16,12 @@ interface BlogCategoriesProps {
 
 export default function BlogCategories({ categories }: BlogCategoriesProps) {
   return (
-    <div className="flex gap-2 justify-center flex-wrap">
+    <div className="flex flex-wrap justify-center gap-2">
       {categories?.categories.map((category, i) => (
         <Link
           key={i}
           href={`/blog/categories/${category.slug}`}
-          className="text-sm font-medium text-slate-900 bg-teal-50 border border-transparent hover:bg-teal-100 hover:border hover:border- hover:border-teal-100 px-2 py-1 rounded-lg transition"
+          className="px-2 py-1 text-sm font-medium transition border border-transparent rounded-lg text-slate-900 bg-teal-50 hover:bg-teal-100 hover:border hover:border- hover:border-teal-100"
         >
           {category.name}
         </Link>

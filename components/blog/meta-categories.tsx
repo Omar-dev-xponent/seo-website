@@ -18,12 +18,12 @@ export default function MetaCategories({ categories }: MetaCategoriesProps) {
           {categories.map((category) => {
             return (
               <div
-                className="text-xs inline-flex items-center p-1 pl-0"
+                className="inline-flex items-center p-1 pl-0 text-xs"
                 key={category.slug}
               >
                 <Link
                   href={`/blog/categories/${category.slug}`}
-                  className="text-xs text-teal-700 font-normal border border-teal-100 bg-teal-50 rounded px-2 py-1"
+                  className="px-2 py-1 text-xs font-normal text-teal-700 border border-teal-100 rounded bg-teal-50"
                 >
                   {category.name}
                 </Link>

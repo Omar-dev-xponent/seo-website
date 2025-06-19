@@ -16,12 +16,9 @@ const Testimonials = () => {
             Discover how we’ve helped businesses like yours achieve success
           </p>
           <div className="grid grid-cols-1 mt-10 sm:grid-cols-2 lg:grid-cols-3 gap-7">
-            <TestimonialCard />
-            <TestimonialCard />
-            <TestimonialCard />
-            <TestimonialCard />
-            <TestimonialCard />
-            <TestimonialCard />
+            {[1, 2, 3, 4, 5, 6].map((_, index) => (
+              <TestimonialCard key={index} />
+            ))}
           </div>
         </div>
       </section>

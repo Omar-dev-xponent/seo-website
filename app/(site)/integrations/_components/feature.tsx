@@ -14,7 +14,7 @@ const Feature = () => {
         "Per-account quota handled automatically",
         "Simple, secure authentication",
       ],
-      image: "/campaign/feature01.png",
+      image: "/client-portal/hero.webp",
     },
     {
       title: "Contact finder & email verifier tools",
@@ -25,7 +25,7 @@ const Feature = () => {
         "Verify emails in bulk to reduce bounces",
         "Improve deliverability and reply rates",
       ],
-      image: "/campaign/feature02.png",
+      image: "/prospecting/feature03.webp",
     },
     {
       title: "AI copywriting tools",
@@ -36,7 +36,7 @@ const Feature = () => {
         `Improve existing templates with AI suggestions`,
         `Save your favorite AI-generated messages for reuse`,
       ],
-      image: "/campaign/feature03.png",
+      image: "/prospecting/feature03.webp",
     },
   ];
   return (
@@ -54,7 +54,7 @@ const Feature = () => {
         <OverviewCard
           title="SEO & domain metrics APIs"
           description={`No need to copy-paste into other tools. All your \n key metrics are already here`}
-          image="/home/client-list.png"
+          image="/home/client-list.webp"
           bgImage="/overview-accent-bg.png"
         />
         <div className="pt-8 space-y-6 md:pt-24 sm:pt-12 md:space-y-24">

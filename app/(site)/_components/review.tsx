@@ -10,7 +10,7 @@ const ReviewSection = () => {
         <div className="flex items-center mt-5 space-x-2 md:mt-0">
           <div className="flex-shrink-0 w-12 h-12 md:w-48 md:h-48 ">
             <Image
-              src={"/customer01.png"}
+              src={"/customer01.webp"}
               alt="cutomer"
               width={0}
               height={0}

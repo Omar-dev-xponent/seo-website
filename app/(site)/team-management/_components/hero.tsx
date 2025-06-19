@@ -27,7 +27,7 @@ const Hero = () => {
               <br className="hidden lg:block" /> clients from one unified,
               shared workspace.
             </p>
-            <CTABtn title="Try free 14 days" href="#" />
+            <CTABtn title="Try free 14 days" href="/pricing" />
             <p className="mt-4 text-base font-display text-typography-50">
               No credit card required
             </p>
@@ -35,7 +35,7 @@ const Hero = () => {
           {/* hero image  */}
           <div className="flex items-center justify-center w-full md:justify-end md:w-1/2">
             <VideoPlayer
-              thumbnailSrc="/client-portal/hero.png"
+              thumbnailSrc="/client-portal/hero.webp"
               videoSrc="https://www.youtube.com/embed/-RLgdfDdCMo?si=XBOS3ZpbMIHmaxw9&autoplay=1&mute=1"
               className="w-full max-w-[467px] max-h-[350px]"
             />

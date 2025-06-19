@@ -2,7 +2,6 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import type { Metadata } from "next";
 import type React from "react";
-import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Outreachful - Link Building Platform",

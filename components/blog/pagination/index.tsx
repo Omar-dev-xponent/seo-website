@@ -23,11 +23,11 @@ const Pagination: React.FC<PaginationProps> = ({ pagesCount, basePath }) => {
   const paginationLinks = createPaginationLinks(currentPage, pagesCount);
 
   return (
-    <nav className="flex justify-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-center lg:px-12">
-      <div className="-mt-px flex">
+    <nav className="flex justify-center w-full py-8 md:justify-center ">
+      <div className="flex justify-between w-full">
         <Previous currentPageNo={currentPage} path={path} />
 
-        <div className="hidden md:-mt-px md:flex">
+        <div className="hidden md:flex">
           <PaginationPages
             paginationLinks={paginationLinks}
             currentPage={currentPage}

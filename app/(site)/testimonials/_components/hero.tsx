@@ -33,7 +33,7 @@ const Hero = () => {
           {/* hero image  */}
           <div className="flex items-center justify-center w-full md:justify-end md:w-[40%]">
             <VideoPlayer
-              thumbnailSrc="/testimonial-hero.png"
+              thumbnailSrc="/testimonial-hero.webp"
               videoSrc="https://www.youtube.com/embed/-RLgdfDdCMo?si=XBOS3ZpbMIHmaxw9&autoplay=1&mute=1"
               className="w-full max-w-[467px] max-h-[350px]"
             />

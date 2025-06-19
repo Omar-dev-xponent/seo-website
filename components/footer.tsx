@@ -1,24 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
+import { FaLinkedin } from "react-icons/fa6";
 import { RiTwitterXFill } from "react-icons/ri";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import DiamondCircleSVG from "@/components/svg-defs/AquaCircleSVG";
 const Footer = () => {
   const socialLinks = [
-    { label: "Facebook", icon: FaFacebook, path: "/" },
-    { label: "Instagram", icon: RiInstagramFill, path: "/" },
-    { label: "Twitter", icon: RiTwitterXFill, path: "/" },
-    { label: "Youtube", icon: TbBrandYoutubeFilled, path: "/" },
+    {
+      label: "Facebook",
+      icon: FaFacebook,
+      path: "https://www.facebook.com/uprankly",
+    },
+    {
+      label: "Instagram",
+      icon: FaLinkedin,
+      path: "https://www.linkedin.com/company/uprankly",
+    },
+    { label: "Twitter", icon: RiTwitterXFill, path: "https://x.com/Uprankly" },
+    {
+      label: "Youtube",
+      icon: TbBrandYoutubeFilled,
+      path: "https://www.youtube.com/@Uprankly",
+    },
   ];
-  const legalLinks = [
-    { label: "Terms .", path: "/" },
-    { label: "Privacy .", path: "/" },
-    { label: "Cookie Policy", path: "/" },
-  ];
+  const legalLinks = [{ label: "Privacy and Policy", path: "/privacy-policy" }];
   const productLinks = [
-    { label: "Site Database", path: "/site-databae" },
+    { label: "Site Database", path: "/site-database" },
     { label: "Client Portal", path: "/client-portal" },
     { label: "Prospecting", path: "/prospecting" },
     { label: "Filtering & Shortlisting", path: "/filtering-and-shortlisting" },
@@ -30,6 +38,8 @@ const Footer = () => {
     { label: "Link Monitoring", path: "/link-monitoring" },
   ];
   const resourcesLinks = [
+    { label: "About", path: "/about" },
+    { label: "Contact", path: "/contact" },
     { label: "Testimonial", path: "/testimonials" },
     { label: "Pricing", path: "/pricing" },
     { label: "Blog", path: "/blog" },
